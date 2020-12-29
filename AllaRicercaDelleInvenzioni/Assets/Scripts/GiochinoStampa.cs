@@ -29,6 +29,7 @@ public class GiochinoStampa : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (!string.IsNullOrEmpty(parola))
         {
             tempo = tempo - Time.deltaTime;
@@ -54,7 +55,7 @@ public class GiochinoStampa : MonoBehaviour
             }
         } 
 
-        if (trovate_parole == 9)
+        if ((trovate_parole == 9)||(Input.GetKeyDown(KeyCode.P)))
         {
             GameObject canva1 = GameObject.Find("Giochino");
             canva1.SetActive(false);
