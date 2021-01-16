@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2505907358504812747}
   - component: {fileID: 6889878269269162749}
   - component: {fileID: 910090665486140932}
+  - component: {fileID: 895846986988288896}
   m_Layer: 0
   m_Name: paravento
   m_TagString: Untagged
@@ -78,3 +79,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &895846986988288896
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1485515731161412312}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.33163977, y: 2.7389853, z: 2.740624}
+  m_Center: {x: 0.13164374, y: 1.3646005, z: -0.0032653809}
