@@ -32,7 +32,6 @@ public class GameSystem : MonoBehaviour
             foreach (GameObject item in _UI) {
                 item.SetActive(true);
             }
-            _cursor.gameObject.SetActive(true);
             _startFlag = false;
 
         }

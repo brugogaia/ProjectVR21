@@ -8,17 +8,18 @@ public class BossBehaviour : MonoBehaviour
     // Start is called before the first frame update
     public static float _speed = 5;
     public GameObject _particles;
-    public GameObject _chara;
+    private GameObject Chara;
     public GameObject _enemy;
     public AudioClip _explosion;
     public AudioClip _damage;
-    private float ThisTimer = 5.0f;
+    private float ThisTimer = 1.0f;
     private int Life = 5;
     private int Direction = 1;
     private int DirSwitch = 4;
 
     void Start()
     {
+        Chara = GameObject.FindGameObjectWithTag("Player");
 
     }
 
@@ -51,7 +52,7 @@ public class BossBehaviour : MonoBehaviour
         ThisTimer -= Time.deltaTime;
         if (ThisTimer < 0.0f) {
             spawnBacteria();
-            ThisTimer = 5.0f;
+            ThisTimer = 1.0f;
         }
 
         switch (DirSwitch)
@@ -77,9 +78,9 @@ public class BossBehaviour : MonoBehaviour
 
     void spawnBacteria()
     {
-        Vector3 spawnpoint = new Vector3(transform.position.x, transform.position.y, _chara.transform.position.z);
+        Vector3 spawnpoint = new Vector3(transform.position.x, transform.position.y, Chara.transform.position.z);
 
-        GameObject Bactertia = Instantiate(_enemy, spawnpoint, Quaternion.LookRotation(Vector3.forward, _chara.transform.position - spawnpoint) * Quaternion.Euler(0f, 0f, 90f));
+        GameObject Bactertia = Instantiate(_enemy, spawnpoint, Quaternion.LookRotation(Vector3.forward, Chara.transform.position - spawnpoint) * Quaternion.Euler(0f, 0f, 90f));
     }
 }
 

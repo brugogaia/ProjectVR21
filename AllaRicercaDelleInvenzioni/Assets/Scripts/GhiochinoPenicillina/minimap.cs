@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class minimap : MonoBehaviour
 {
-    private bool End= false;
+    private bool End = false;
     private float SpacePercorred=0;
     private Vector3 OriginPos; 
     
