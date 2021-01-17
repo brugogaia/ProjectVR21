@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 06761685c5fc7a94cb501ca42cc14440
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Intro Cond Caps
+  fontNames:
+  - Intro Cond Caps
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: e008eb27eb3a59943bb5f9ab3ecd4732, type: 3}
+  - {fileID: 12800000, guid: 10396faa9c60b9b4997fbe51adaef931, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
