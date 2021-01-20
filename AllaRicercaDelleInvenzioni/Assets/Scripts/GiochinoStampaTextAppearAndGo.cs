@@ -31,6 +31,7 @@ public class GiochinoStampaTextAppearAndGo : MonoBehaviour
                 text1.SetActive(false);
                 canva1.SetActive(true);
                 canva2.SetActive(false);
+                UnityStandardAssets.Characters.FirstPerson.RigidbodyFirstPersonController._activeMovement = false;
             }
         }
         if (!entrato)
