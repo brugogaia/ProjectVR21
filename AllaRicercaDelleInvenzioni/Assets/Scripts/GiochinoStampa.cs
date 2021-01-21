@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityStandardAssets.Characters.FirstPerson;
 
 public class GiochinoStampa : MonoBehaviour
 {
@@ -11,8 +12,11 @@ public class GiochinoStampa : MonoBehaviour
     int trovate_parole=0;
     GameObject[] gutenberg = new GameObject[9];
     float tempo = 5f;
+    public GameObject canva1;
+    public GameObject canva2;
+    RigidbodyFirstPersonController scriptFP = null;
 
-      // Start is called before the first frame update
+    // Start is called before the first frame update
     void Start()
     {
         GameObject g1 = GameObject.Find("G1"); g1.SetActive(false); gutenberg[4] = g1;
@@ -24,6 +28,9 @@ public class GiochinoStampa : MonoBehaviour
         GameObject e2 = GameObject.Find("E2"); e2.SetActive(false); gutenberg[3] = e2;
         GameObject r1 = GameObject.Find("R1"); r1.SetActive(false); gutenberg[8] = r1;
         GameObject g2 = GameObject.Find("G2"); g2.SetActive(false); gutenberg[5] = g2;
+        canva2.SetActive(false);
+        GameObject tempObj = GameObject.Find("RigidBodyFPSController");
+        scriptFP = tempObj.GetComponent<RigidbodyFirstPersonController>();
     }
 
     // Update is called once per frame
@@ -57,9 +64,9 @@ public class GiochinoStampa : MonoBehaviour
 
         if ((trovate_parole == 9)||(Input.GetKeyDown(KeyCode.P)))
         {
-            GameObject canva1 = GameObject.Find("Giochino");
+            
             canva1.SetActive(false);
-            GameObject canva2 = GameObject.Find("ParolaTrovata");
+            
             canva2.SetActive(true);
         }
     }
@@ -103,5 +110,19 @@ public class GiochinoStampa : MonoBehaviour
                 break;
             }
         }
+    }
+
+    public void EndGame()
+    {
+        UnityStandardAssets.Characters.FirstPerson.RigidbodyFirstPersonController._activeMovement = true;
+        scriptFP.mouseLook.lockCursor = true;//gameObject.mouse.lockCursor = false;
+        scriptFP.mouseLook.SetCursorLock(true);//mouseLook.SetCursorLock(false);
+        canva1.SetActive(false);
+        canva2.SetActive(false);
+
+
+   
+
+
     }
 }
