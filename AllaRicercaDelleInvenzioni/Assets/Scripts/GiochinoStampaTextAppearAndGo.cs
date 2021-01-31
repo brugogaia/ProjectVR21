@@ -33,7 +33,7 @@ public class GiochinoStampaTextAppearAndGo : MonoBehaviour
             Debug.Log("ENTRATO");
             text1.SetActive(true);
 
-            if (Input.GetMouseButtonDown(1))
+            if (Input.GetMouseButtonDown(0))
             {
                 finetesto = true;
                 text1.SetActive(false);
@@ -47,7 +47,7 @@ public class GiochinoStampaTextAppearAndGo : MonoBehaviour
 
             }
         }
-        if (!entrato)
+        if (!entrato && !finetesto)
         {
             Debug.Log("Fuori");
             text1.SetActive(false);

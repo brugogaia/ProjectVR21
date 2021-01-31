@@ -11,9 +11,11 @@ public class GiochinoStampa : MonoBehaviour
     string listaI;
     int trovate_parole=0;
     GameObject[] gutenberg = new GameObject[9];
-    float tempo = 5f;
+    float tempo = 3f;
     public GameObject canva1;
     public GameObject canva2;
+    public GameObject errore;
+    public bool fineGioco;
     RigidbodyFirstPersonController scriptFP = null;
 
     // Start is called before the first frame update
@@ -29,8 +31,10 @@ public class GiochinoStampa : MonoBehaviour
         GameObject r1 = GameObject.Find("R1"); r1.SetActive(false); gutenberg[8] = r1;
         GameObject g2 = GameObject.Find("G2"); g2.SetActive(false); gutenberg[5] = g2;
         canva2.SetActive(false);
+        errore.SetActive(false);
         GameObject tempObj = GameObject.Find("RigidBodyFPSController");
         scriptFP = tempObj.GetComponent<RigidbodyFirstPersonController>();
+        fineGioco = false;
     }
 
     // Update is called once per frame
@@ -39,6 +43,7 @@ public class GiochinoStampa : MonoBehaviour
 
         if (!string.IsNullOrEmpty(parola))
         {
+            errore.SetActive(false);
             tempo = tempo - Time.deltaTime;
             for (int i = 0; i < lista.Length; i++)
             {
@@ -52,15 +57,18 @@ public class GiochinoStampa : MonoBehaviour
                     this.ClearList(listaI);
                     this.ClearText();
                     this.AppearWord();
-                    tempo = 5f;
+                    tempo = 3f;
                 }
             }
             if(tempo<0f)
             {
                 Debug.Log("ERRORE");
-                tempo = 10f;
+
+                this.ClearText();
+                errore.SetActive(true);
+                tempo = 3f;
             }
-        } 
+        }
 
         if ((trovate_parole == 9)||(Input.GetKeyDown(KeyCode.P)))
         {
@@ -76,13 +84,21 @@ public class GiochinoStampa : MonoBehaviour
         parola = parola + letter;
         Text parolaComposta = GameObject.Find("ParolaComposta").GetComponent<Text>();
         parolaComposta.text = parola;
-        tempo = 5f;
+        tempo = 3f;
     }
 
     public void ClearText()
     {
         parola= parola.Remove(0);
-        Debug.Log(parola);
+        //Debug.Log(parola);
+        Text parolaComposta = GameObject.Find("ParolaComposta").GetComponent<Text>();
+        parolaComposta.text = parola;
+    }
+
+    public void ClearLettera()
+    {
+        parola = parola.Remove(parola.Length - 1);
+        //Debug.Log(parola);
         Text parolaComposta = GameObject.Find("ParolaComposta").GetComponent<Text>();
         parolaComposta.text = parola;
     }
@@ -119,10 +135,6 @@ public class GiochinoStampa : MonoBehaviour
         scriptFP.mouseLook.SetCursorLock(true);//mouseLook.SetCursorLock(false);
         canva1.SetActive(false);
         canva2.SetActive(false);
-
-
-   
-
-
+        fineGioco = true;
     }
 }
