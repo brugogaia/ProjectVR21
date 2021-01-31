@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Lumina : MonoBehaviour
 {
-    public GameObject player;
+    private GameObject Player;
     private Color original;
     private float Red;
     private float Green;
@@ -17,12 +17,13 @@ public class Lumina : MonoBehaviour
         Red = original.r;
         Green = original.g;
         Blue = original.b;
+        Player = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector3 PlayPos=player.transform.position;
+        Vector3 PlayPos=Player.transform.position;
         Vector3 Pos = transform.position;
         float Distance = Vector3.Distance(PlayPos, Pos);
         if (Distance < MaxDist)
