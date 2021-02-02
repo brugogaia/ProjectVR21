@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8732765992850380958}
   - component: {fileID: 318069858618729128}
   - component: {fileID: 6293371128676195921}
+  - component: {fileID: 437391209968165174}
   m_Layer: 0
   m_Name: comodino
   m_TagString: Untagged
@@ -55,6 +56,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -79,6 +81,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &437391209968165174
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5722489347452938893}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.68430156, y: 0.6072726, z: 0.68430156}
+  m_Center: {x: -0.0054197013, y: 0.30363637, z: -0.0039893985}
 --- !u!1 &6131075204052362026
 GameObject:
   m_ObjectHideFlags: 0
@@ -90,6 +105,7 @@ GameObject:
   - component: {fileID: 7249432485947408886}
   - component: {fileID: 4906336568747309710}
   - component: {fileID: 8076731225090625428}
+  - component: {fileID: 5250576689706763697}
   m_Layer: 0
   m_Name: cassetto
   m_TagString: Untagged
@@ -133,6 +149,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -157,3 +174,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &5250576689706763697
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6131075204052362026}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5776791, y: 0.16112997, z: 0.6600166}
+  m_Center: {x: 0, y: -0.000000037252903, z: -0.3300083}
