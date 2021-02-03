@@ -30,8 +30,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6606468617564256966}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.980315, y: -3.11, z: 14.409245}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -10.980315, y: -3.55, z: 14.6027}
+  m_LocalScale: {x: 0.7543872, y: 0.7543872, z: 0.7543872}
   m_Children:
   - {fileID: 6606468618416754857}
   - {fileID: 6606468618611549766}
@@ -53,7 +53,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6606468617564256966}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -96,7 +96,7 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5000001
-  m_Height: 2
+  m_Height: 1.6
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!114 &6606468617564256961
@@ -114,6 +114,7 @@ MonoBehaviour:
   _cameraT: {fileID: 6606468618416754857}
   _speed: 5
   _mouseSensitivity: 500
+  stop: 0
 --- !u!143 &6606468617564257020
 CharacterController:
   m_ObjectHideFlags: 0
@@ -173,7 +174,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6606468618416754860}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.134, y: 0.488, z: 0.941}
+  m_LocalPosition: {x: -0.02, y: 0.488, z: -0.06}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6606468617564257021}

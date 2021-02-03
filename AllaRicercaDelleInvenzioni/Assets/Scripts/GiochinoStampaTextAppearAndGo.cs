@@ -40,11 +40,9 @@ public class GiochinoStampaTextAppearAndGo : MonoBehaviour
                 canva1.SetActive(true);
                 canva2.SetActive(false);
                 UnityStandardAssets.Characters.FirstPerson.RigidbodyFirstPersonController._activeMovement = false;
-                scriptFP.mouseLook.lockCursor = false;//gameObject.mouse.lockCursor = false;
-                scriptFP.mouseLook.SetCursorLock(false);//mouseLook.SetCursorLock(false);
-
-
-
+                //scriptFP.mouseLook.lockCursor = false;//gameObject.mouse.lockCursor = false;
+                //scriptFP.mouseLook.SetCursorLock(false);//mouseLook.SetCursorLock(false);
+                               
             }
         }
         if (!entrato && !finetesto)

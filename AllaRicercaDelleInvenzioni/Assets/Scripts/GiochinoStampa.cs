@@ -16,7 +16,8 @@ public class GiochinoStampa : MonoBehaviour
     public GameObject canva2;
     public GameObject errore;
     public bool fineGioco;
-    RigidbodyFirstPersonController scriptFP = null;
+    public EasyFPC scriptMovimento;
+    //RigidbodyFirstPersonController scriptFP = null;
 
     // Start is called before the first frame update
     void Start()
@@ -32,9 +33,11 @@ public class GiochinoStampa : MonoBehaviour
         GameObject g2 = GameObject.Find("G2"); g2.SetActive(false); gutenberg[5] = g2;
         canva2.SetActive(false);
         errore.SetActive(false);
-        GameObject tempObj = GameObject.Find("RigidBodyFPSController");
-        scriptFP = tempObj.GetComponent<RigidbodyFirstPersonController>();
+        //GameObject tempObj = GameObject.Find("RigidBodyFPSController");
+        //scriptFP = tempObj.GetComponent<RigidbodyFirstPersonController>();
         fineGioco = false;
+        scriptMovimento.stop = true;
+
     }
 
     // Update is called once per frame
@@ -131,10 +134,11 @@ public class GiochinoStampa : MonoBehaviour
     public void EndGame()
     {
         UnityStandardAssets.Characters.FirstPerson.RigidbodyFirstPersonController._activeMovement = true;
-        scriptFP.mouseLook.lockCursor = true;//gameObject.mouse.lockCursor = false;
-        scriptFP.mouseLook.SetCursorLock(true);//mouseLook.SetCursorLock(false);
+        //scriptFP.mouseLook.lockCursor = true;//gameObject.mouse.lockCursor = false;
+        //scriptFP.mouseLook.SetCursorLock(true);//mouseLook.SetCursorLock(false);
         canva1.SetActive(false);
         canva2.SetActive(false);
         fineGioco = true;
+        scriptMovimento.stop = false;
     }
 }
