@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4d980272f74a41b4a8a2909a1f0f55e0
+guid: 7d1f7d1884358db4fbafb18aa0f2dd1b
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
@@ -13,7 +13,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: carta
-    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+    second: {fileID: 2100000, guid: 4bbf6d99229cd9643a68e30d897de330, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
