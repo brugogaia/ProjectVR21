@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6583639183902146527}
   - component: {fileID: 603835978500506406}
   - component: {fileID: 4370472361921611361}
+  - component: {fileID: 4655141052111426316}
   m_Layer: 0
   m_Name: ciotola
   m_TagString: Untagged
@@ -96,3 +97,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &4655141052111426316
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179265336072845306}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16969422, y: 0.074055776, z: 0.16969424}
+  m_Center: {x: 0, y: 0.037027888, z: -0.000000014901161}

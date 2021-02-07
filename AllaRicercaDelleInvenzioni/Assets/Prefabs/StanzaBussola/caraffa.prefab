@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7409783103852041776}
   - component: {fileID: 3884459210242599625}
   - component: {fileID: 1439775870643830451}
+  - component: {fileID: 5095964762107917604}
   m_Layer: 0
   m_Name: caraffa
   m_TagString: Untagged
@@ -96,3 +97,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!136 &5095964762107917604
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3302415191371882005}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.11862692
+  m_Height: 0.24193692
+  m_Direction: 1
+  m_Center: {x: -0.0011505634, y: 0.112128526, z: -0.0053045303}
