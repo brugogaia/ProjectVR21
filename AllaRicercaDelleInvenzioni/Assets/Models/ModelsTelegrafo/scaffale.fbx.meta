@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e066d4e6361e7264ea53bc928128b895
+guid: cf46c155e710a0b4a91b9ada34bc90f9
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
@@ -7,13 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: LEGNO
-    second: {fileID: 2100000, guid: 45ed09d56e4ffc94788466f8cf7f0144, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: LIBRI
-    second: {fileID: 2100000, guid: 76ecf134e0083eb42ba2705b786e2ac2, type: 2}
+      name: Material
+    second: {fileID: 2100000, guid: 9de70ec8edd791646ad3ab7ee797d689, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
