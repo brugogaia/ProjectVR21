@@ -1,24 +1,9 @@
 fileFormatVersion: 2
-guid: 4d980272f74a41b4a8a2909a1f0f55e0
+guid: 5e907088d3aef9b42b350b9ac49c865b
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: bordino
-    second: {fileID: 2100000, guid: 3da34dc0e007e4240a7ccc7b801781dc, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: carta
-    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: copertina
-    second: {fileID: 2100000, guid: ba49e7fda340cdc41af60a053638bd5a, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 1
     materialName: 0
