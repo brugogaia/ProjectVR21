@@ -3564,7 +3564,7 @@ PrefabInstance:
     - target: {fileID: 6606468617564256966, guid: 1e406e1461de0e94ba5783cdb9a615df,
         type: 3}
       propertyPath: m_Name
-      value: PlayerCylinder
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 6606468617564256966, guid: 1e406e1461de0e94ba5783cdb9a615df,
         type: 3}
@@ -3584,7 +3584,7 @@ PrefabInstance:
     - target: {fileID: 6606468617564257021, guid: 1e406e1461de0e94ba5783cdb9a615df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.62
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 6606468617564257021, guid: 1e406e1461de0e94ba5783cdb9a615df,
         type: 3}
