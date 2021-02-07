@@ -7,6 +7,7 @@ TagManager:
   - Fire
   - Enemy
   - Bullet
+  - Menu
   layers:
   - Default
   - TransparentFX
