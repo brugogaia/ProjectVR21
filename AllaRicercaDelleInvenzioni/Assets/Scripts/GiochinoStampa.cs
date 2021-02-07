@@ -92,18 +92,26 @@ public class GiochinoStampa : MonoBehaviour
 
     public void ClearText()
     {
-        parola= parola.Remove(0);
-        //Debug.Log(parola);
-        Text parolaComposta = GameObject.Find("ParolaComposta").GetComponent<Text>();
-        parolaComposta.text = parola;
+        if (!string.IsNullOrEmpty(parola))
+        {
+            parola = parola.Remove(0);
+            //Debug.Log(parola);
+            Text parolaComposta = GameObject.Find("ParolaComposta").GetComponent<Text>();
+            parolaComposta.text = parola;
+        }
     }
+            
 
     public void ClearLettera()
     {
-        parola = parola.Remove(parola.Length - 1);
-        //Debug.Log(parola);
-        Text parolaComposta = GameObject.Find("ParolaComposta").GetComponent<Text>();
-        parolaComposta.text = parola;
+        if (!string.IsNullOrEmpty(parola))
+        {
+            parola = parola.Remove(parola.Length - 1);
+            //Debug.Log(parola);
+            Text parolaComposta = GameObject.Find("ParolaComposta").GetComponent<Text>();
+            parolaComposta.text = parola;
+        }
+            
     }
 
     public void ClearList(string text)
@@ -112,7 +120,11 @@ public class GiochinoStampa : MonoBehaviour
         {
             if (text == lista[i])
             {
-                lista[i] = lista[i].Remove(0);
+                if (!string.IsNullOrEmpty(parola))
+                {
+                    lista[i] = lista[i].Remove(0);
+                }
+                    
             }
                 
         }

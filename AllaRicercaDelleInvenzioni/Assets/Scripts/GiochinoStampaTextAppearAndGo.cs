@@ -11,7 +11,7 @@ public class GiochinoStampaTextAppearAndGo : MonoBehaviour
     public GameObject canva1;
     public GameObject canva2;
     public GameObject text1;
-    RigidbodyFirstPersonController scriptFP = null;
+   
 
 
 
@@ -21,8 +21,7 @@ public class GiochinoStampaTextAppearAndGo : MonoBehaviour
         canva1.SetActive(false);
         canva2.SetActive(false);
         text1.SetActive(false);
-        GameObject tempObj = GameObject.Find("RigidBodyFPSController");
-        scriptFP = tempObj.GetComponent<RigidbodyFirstPersonController>();
+        
     }
 
     // Update is called once per frame
