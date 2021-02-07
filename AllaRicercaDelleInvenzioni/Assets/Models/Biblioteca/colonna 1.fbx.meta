@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e066d4e6361e7264ea53bc928128b895
+guid: 47622e00b76ecde42935538ecc848f7a
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
@@ -8,7 +8,8 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: LEGNO
-    second: {fileID: 2100000, guid: 45ed09d56e4ffc94788466f8cf7f0144, type: 2}
+    second: {fileID: 7688115450179722122, guid: 5e907088d3aef9b42b350b9ac49c865b,
+      type: 3}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
