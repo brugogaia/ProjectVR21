@@ -3,7 +3,22 @@ guid: 64aec100366849c40942d0b1a52a8144
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino
+    second: {fileID: 2100000, guid: 57b212126b458b6419bf4ff0da511751, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta
+    second: {fileID: 2100000, guid: d25f043307ea7b64387f9acfb6f719fd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina
+    second: {fileID: 2100000, guid: bc946a073bf18cd488eb161513734794, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
