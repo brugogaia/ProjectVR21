@@ -21,7 +21,7 @@ public class GiochinoStampaTextAppearAndGo : MonoBehaviour
         canva1.SetActive(false);
         canva2.SetActive(false);
         text1.SetActive(false);
-        
+       
     }
 
     // Update is called once per frame

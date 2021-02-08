@@ -4,5 +4,26 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Inizio.unity
+    guid: 366347afcc6b1684e96f8d091314d18a
+  - enabled: 1
+    path: Assets/Scenes/Biblioteca.unity
+    guid: 8504ff4575a84c94d85c12c1ea576a50
+  - enabled: 1
+    path: Assets/Scenes/StanzaBussola.unity
+    guid: ec7a145d9d689d64f9c0471760bafcd9
+  - enabled: 1
+    path: Assets/Scenes/StanzaStampa.unity
+    guid: 5765dafe345856f4baadb1c918d33058
+  - enabled: 1
+    path: Assets/Scenes/StanzaTelegrafo.unity
+    guid: 12157bc5f339bfd4faa5cb136195a32a
+  - enabled: 1
+    path: Assets/Scenes/StanzaPenicillina.unity
+    guid: 50cc51e165bb6d14a8f1f088d7bc9e62
+  - enabled: 1
+    path: Assets/Scenes/GiochinoPenicillina.unity
+    guid: 0bde917f8f20f8349b8ee330be375e83
   m_configObjects: {}
