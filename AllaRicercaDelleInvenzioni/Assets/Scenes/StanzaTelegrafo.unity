@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.4465788, g: 0.4964134, b: 0.5748169, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657934, g: 0.496414, b: 0.5748176, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -528,32 +528,32 @@ PrefabInstance:
     - target: {fileID: 6606468617564257021, guid: 1e406e1461de0e94ba5783cdb9a615df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.62
+      value: 1.67
       objectReference: {fileID: 0}
     - target: {fileID: 6606468617564257021, guid: 1e406e1461de0e94ba5783cdb9a615df,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.16
+      value: 7.51
       objectReference: {fileID: 0}
     - target: {fileID: 6606468617564257021, guid: 1e406e1461de0e94ba5783cdb9a615df,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.22324175
       objectReference: {fileID: 0}
     - target: {fileID: 6606468617564257021, guid: 1e406e1461de0e94ba5783cdb9a615df,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6606468617564257021, guid: 1e406e1461de0e94ba5783cdb9a615df,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.97476315
       objectReference: {fileID: 0}
     - target: {fileID: 6606468617564257021, guid: 1e406e1461de0e94ba5783cdb9a615df,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6606468617564257021, guid: 1e406e1461de0e94ba5783cdb9a615df,
         type: 3}
@@ -563,7 +563,7 @@ PrefabInstance:
     - target: {fileID: 6606468617564257021, guid: 1e406e1461de0e94ba5783cdb9a615df,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 154.201
       objectReference: {fileID: 0}
     - target: {fileID: 6606468617564257021, guid: 1e406e1461de0e94ba5783cdb9a615df,
         type: 3}
