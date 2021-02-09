@@ -16,7 +16,7 @@ public class GiochinoStampa : MonoBehaviour
     public GameObject canva2;
     public GameObject errore;
     public bool fineGioco;
-    public EasyFPC scriptMovimento;
+    
     //RigidbodyFirstPersonController scriptFP = null;
 
     // Start is called before the first frame update
@@ -36,7 +36,7 @@ public class GiochinoStampa : MonoBehaviour
         //GameObject tempObj = GameObject.Find("RigidBodyFPSController");
         //scriptFP = tempObj.GetComponent<RigidbodyFirstPersonController>();
         fineGioco = false;
-        scriptMovimento.stop = true;
+        EasyFPC.stop = true;
 
     }
 
@@ -151,6 +151,6 @@ public class GiochinoStampa : MonoBehaviour
         canva1.SetActive(false);
         canva2.SetActive(false);
         fineGioco = true;
-        scriptMovimento.stop = false;
+        EasyFPC.stop = false;
     }
 }
