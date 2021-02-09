@@ -11,6 +11,8 @@ TagManager:
   - Parent
   - Comodino
   - Penicillina
+  - Before
+  - After
   layers:
   - Default
   - TransparentFX

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4754,6 +4754,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f10e5d107b86fc459a114a50b2d7d07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _isGrabbed: 0
 --- !u!95 &406493566
 Animator:
   serializedVersion: 3
@@ -5205,6 +5206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f10e5d107b86fc459a114a50b2d7d07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _isGrabbed: 0
 --- !u!95 &434187980
 Animator:
   serializedVersion: 3
@@ -7824,6 +7826,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f10e5d107b86fc459a114a50b2d7d07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _isGrabbed: 0
 --- !u!1001 &750636177
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8882,6 +8885,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f10e5d107b86fc459a114a50b2d7d07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _isGrabbed: 0
 --- !u!1001 &857065925
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9953,6 +9957,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f10e5d107b86fc459a114a50b2d7d07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _isGrabbed: 0
 --- !u!4 &1008776779 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2740104248361174505, guid: 45cfe721874fe7c48a0a047d56b3234e,
@@ -10757,6 +10762,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f10e5d107b86fc459a114a50b2d7d07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _isGrabbed: 0
 --- !u!1001 &1130746957
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12220,6 +12226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f10e5d107b86fc459a114a50b2d7d07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _isGrabbed: 0
 --- !u!95 &1328151728
 Animator:
   serializedVersion: 3
@@ -14392,6 +14399,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _startObj: {fileID: 219081690}
   _endObj: {fileID: 1142954486}
+  timerReset: 10
 --- !u!1001 &1622795401
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16835,6 +16843,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f10e5d107b86fc459a114a50b2d7d07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _isGrabbed: 0
 --- !u!95 &1835944838
 Animator:
   serializedVersion: 3
