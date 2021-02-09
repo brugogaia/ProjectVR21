@@ -9,6 +9,7 @@ TagManager:
   - Bullet
   - Menu
   - Parent
+  - Comodino
   layers:
   - Default
   - TransparentFX
