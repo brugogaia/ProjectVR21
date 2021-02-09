@@ -6,11 +6,11 @@ using UnityEngine.UI;
 public class Comodino : MonoBehaviour
 {
     private bool _enter = false;
-    public GameObject _canvaTextOpen;
-    public GameObject _canvaTextClose;
+    [SerializeField] GameObject _canvaTextOpen;
+    [SerializeField] GameObject _canvaTextClose;
 
-    public GameObject _nightstand;
-    public Animator _animator;
+    [SerializeField] GameObject _nightstand;
+    [SerializeField] Animator _animator;
     private bool _open;
 
     // Start is called before the first frame update
