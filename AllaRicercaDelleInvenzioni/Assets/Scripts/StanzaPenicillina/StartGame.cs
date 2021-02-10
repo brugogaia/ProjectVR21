@@ -11,6 +11,7 @@ public class StartGame : MonoBehaviour
     [SerializeField] GameObject _text;
     private bool _enter;
     private bool _isGrabbed;
+    public Soldato scriptSoldato;
     
     // Start is called before the first frame update
     void Start()
@@ -43,6 +44,16 @@ public class StartGame : MonoBehaviour
         {
             //Debug.Log("Exit game trigger");
             _text.SetActive(false);
+        }
+
+        if (_enter)
+        {
+            scriptSoldato.Talking();
+            scriptSoldato.intrigger = true;
+        }
+        else
+        {
+            scriptSoldato.intrigger = false;
         }
 
     }

@@ -138,6 +138,4 @@ public class RobotTalk : MonoBehaviour {
             talk_box.SetActive(false);
         }
     }
-
-
 } 

@@ -64,7 +64,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Sitting Talking
-  m_Speed: 1
+  m_Speed: 0.3
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -76,7 +76,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -203655887218126122, guid: 0aae6347d4b875f4087cb69cc21556a6,
+  m_Motion: {fileID: -203655887218126122, guid: 72032fcf129c63e41888ce36aefd505d,
     type: 3}
   m_Tag: 
   m_SpeedParameter: 
@@ -97,7 +97,7 @@ AnimatorStateMachine:
     m_Position: {x: 30, y: 220, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 546166992574651796}
-    m_Position: {x: 270, y: 220, z: 0}
+    m_Position: {x: 30, y: 380, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
