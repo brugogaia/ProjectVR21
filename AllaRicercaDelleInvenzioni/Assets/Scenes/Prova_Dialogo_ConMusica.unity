@@ -121,177 +121,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &15415460
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 15415461}
-  - component: {fileID: 15415462}
-  m_Layer: 0
-  m_Name: Talk_Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &15415461
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 15415460}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 132.96782, y: -386.82077, z: -191.02739}
-  m_LocalScale: {x: 2.1917808, y: 2.1917808, z: 2.1917808}
-  m_Children: []
-  m_Father: {fileID: 1643780972}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &15415462
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 15415460}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e1476ea24e16b44b8b73add31378e34, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textDisplay: {fileID: 1546514968}
-  e: {fileID: 563741309}
-  sentences:
-  - "Zzz...zzz...zz! Aaw, non ti avevo visto arrivare. Finalmente sei qui! Forse
-    non sai da quanto tempo ti stia aspettando... Ma bando alle ciance, il mio creatore
-    mi ha dato un compito cos\xEC importante e io parlo solo del fatto che stia aspettando
-    da non so quanti ann..."
-  - "Focus! Focus! Devo consegnarti una lettera molto importante da parte del Grande
-    Inventore, sicuramente lui sapr\xE0 spiegarti meglio la situazione, ma sappi
-    che sono completamente al tuo servizio."
-  - "Questa libreria \xE8 grande quanto una citt\xE0, ma fino a quando non avremo
-    portato a termine la missione sar\xE0 meglio concentrarsi solamente su questa
-    stanza. Infatti si trovano proprio qui i libri che dovrai cercare e... Ma non
-    voglio toglierti il divertimento di scoprirlo eheheh ... Focus!"
-  - Dicevo, Dovrai trovare una serie di libri e appoggiarli sui leggii che vedi su
-    questo tavolo. Non ti preoccupare, lo so che i libri in questa stanza sono tanti,
-    ma ci sono io ad aiutarti!
-  - Vorrei poterti dare direttamente i giusti tomi, ma con gli anni il mio sistema
-    ha subito dei danni, quindi queste poche indicazioni sono il massimo che posso
-    fare per te anche se un tempo ero il migliore robo... Focus! Focus!
-  - "Quando sarai all\u2019interno del libro, te l\u2019ho detto che aprendo il libro
-    finirai al suo interno, vero? Cerca di imparare pi\xF9 cose possibili: in ogni
-    libro il tuo taccuino si aggiorner\xE0 con tutte le informazioni riguardanti
-    a quella invenzione."
-  indovinelli:
-  - "Il primo libro che dovrai trovare, \xE8 molto vecchio ti posso giurare! La copertina
-    di rosso lo adorna: \xE8 sulle scale cos\xEC da mostrarsi a ogni persona che
-    ritorna."
-  - "Il secondo libro in Germania ti trasporter\xE0 e nel Medioevo si ambienter\xE0.
-    Per trovarlo la strada \xE8 facile, guarda nelle colonne in maniera agile. "
-  - "Grazie a lui ogni parte del mondo vicina \xE8 diventata e la comunicazione 
-    \xE8 migliorata. Per trovarlo basta trovare la direzione del rumore che senti
-    arrivare. "
-  - "Tante vite ha salvato e tutto il mondo ne ha giovato. Il suo libro \xE8 di viola
-    vestito e il suo posto vicino al mappamondo \xE8 adibito. "
---- !u!1 &133163550 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d633665ca4490534b8d4fd8316d4c51d,
-    type: 3}
-  m_PrefabInstance: {fileID: 294549564}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &133163552
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 133163550}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1.2578285, z: 0.45303553}
-  m_Center: {x: 0, y: 0.16574705, z: 0.0026837215}
---- !u!1001 &294549564
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: d633665ca4490534b8d4fd8316d4c51d,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: d633665ca4490534b8d4fd8316d4c51d,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: d633665ca4490534b8d4fd8316d4c51d,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.01
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: d633665ca4490534b8d4fd8316d4c51d,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: d633665ca4490534b8d4fd8316d4c51d,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: d633665ca4490534b8d4fd8316d4c51d,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: d633665ca4490534b8d4fd8316d4c51d,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: d633665ca4490534b8d4fd8316d4c51d,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: d633665ca4490534b8d4fd8316d4c51d,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: d633665ca4490534b8d4fd8316d4c51d,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: d633665ca4490534b8d4fd8316d4c51d,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 606443131984751226, guid: d633665ca4490534b8d4fd8316d4c51d,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: afaa367660b5b44478c169212837ad33, type: 2}
-    - target: {fileID: 919132149155446097, guid: d633665ca4490534b8d4fd8316d4c51d,
-        type: 3}
-      propertyPath: m_Name
-      value: robottino_conanimazioni
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d633665ca4490534b8d4fd8316d4c51d, type: 3}
 --- !u!1001 &398699225
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -322,7 +151,7 @@ PrefabInstance:
     - target: {fileID: 6606468617564257021, guid: 1e406e1461de0e94ba5783cdb9a615df,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6606468617564257021, guid: 1e406e1461de0e94ba5783cdb9a615df,
         type: 3}
@@ -381,99 +210,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e406e1461de0e94ba5783cdb9a615df, type: 3}
---- !u!1 &492358744
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 492358748}
-  - component: {fileID: 492358747}
-  - component: {fileID: 492358746}
-  - component: {fileID: 492358745}
-  m_Layer: 0
-  m_Name: TriggerRobot_Talk
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!65 &492358745
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 492358744}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &492358746
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 492358744}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &492358747
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 492358744}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &492358748
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 492358744}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.004, y: 2.053, z: -0.958}
-  m_LocalScale: {x: 1.6685464, y: 1.4856704, z: 2.412039}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &548447507
 GameObject:
   m_ObjectHideFlags: 0
@@ -593,16 +329,16 @@ RectTransform:
   m_GameObject: {fileID: 563741307}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.35541403, y: 0.35541403, z: 0.35541403}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 1643780972}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 541.9, y: -481}
+  m_AnchoredPosition: {x: 758, y: -481}
   m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.49999997, y: 0.50000054}
 --- !u!114 &563741309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -704,7 +440,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1546514966
 GameObject:
@@ -736,12 +472,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1643780972}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 77.1, y: -436.89996}
-  m_SizeDelta: {x: 940.69965, y: 123.669525}
+  m_AnchoredPosition: {x: 68.8, y: -436.89996}
+  m_SizeDelta: {x: 1351.2476, y: 123.669525}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1546514968
 MonoBehaviour:
@@ -764,7 +500,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: b4a9134d319120841bc7cb30f48e4188, type: 3}
-    m_FontSize: 26
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -874,12 +610,11 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 15415461}
   - {fileID: 1816531274}
   - {fileID: 1546514967}
   - {fileID: 563741308}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -916,12 +651,12 @@ RectTransform:
   m_LocalScale: {x: 11.052105, y: 5.9230585, z: 8.263256}
   m_Children: []
   m_Father: {fileID: 1643780972}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 26, y: -441.59998}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 0, y: -441.59998}
+  m_SizeDelta: {x: 145.63808, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1816531275
 MonoBehaviour:
@@ -1054,3 +789,259 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &253098514041476143 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6745382855246122586, guid: 3ae4103508e99794ba49960cef411fc2,
+    type: 3}
+  m_PrefabInstance: {fileID: 6782216761827367541}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &253098514041476144
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 253098514041476143}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 0c6151bace920f049804df182f7a51a1, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.5
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 1
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &253098514041476145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 253098514041476143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e1476ea24e16b44b8b73add31378e34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textDisplay: {fileID: 1546514968}
+  e: {fileID: 563741309}
+  talk_box: {fileID: 1816531273}
+  sentences:
+  - "Zzz...zzz...zz! Aaw, non ti avevo visto arrivare. Finalmente sei qui! Forse
+    non sai da quanto tempo ti stia aspettando... Ma bando alle ciance, il mio creatore
+    mi ha dato un compito cos\xEC importante e io parlo solo del fatto che stia aspettando
+    te da non so quanti ann..."
+  - "Focus! Focus! Devo consegnarti una lettera molto importante da parte del Grande
+    Inventore, sicuramente lui sapr\xE0 spiegarti meglio la situazione, ma sappi
+    che sono completamente al tuo servizio."
+  - "Questa libreria \xE8 grande quanto una citt\xE0, ma fino a quando non avremo
+    portato a termine la missione sar\xE0 meglio concentrarsi solamente su questa
+    stanza. Infatti si trovano proprio qui i libri che dovrai cercare e... Ma non
+    voglio toglierti il divertimento di scoprirlo eheheh ... Focus!"
+  - Dicevo,  dovrai trovare una serie di libri e appoggiarli sui leggii che vedi
+    su questo tavolo. Non ti preoccupare, lo so che i libri in questa stanza sono
+    tanti, ma ci sono io ad aiutarti!
+  - Vorrei poterti dare direttamente i giusti tomi, ma con gli anni il mio sistema
+    ha subito dei danni, quindi queste poche indicazioni sono il massimo che posso
+    fare per te anche se un tempo ero il migliore robo... Focus! Focus!
+  - "Quando sarai all\u2019interno del libro, te l\u2019ho detto che aprendo il libro
+    finirai al suo interno, vero? Cerca di imparare pi\xF9 cose possibili: in ogni
+    stanza il tuo taccuino si aggiorner\xE0 con tutte le informazioni riguardanti
+    quella invenzione."
+  - 'Potrai consultarlo quando vuoi: ti basta premere il tasto ESC. Comunque, al
+    tuo ritorno mi troverai di nuovo qui pronto a darti il consiglio per trovare
+    il prossimo libro. Non sono spettacolare? Focus! Focus!'
+  riddles:
+  - "Il primo libro che dovrai trovare, \xE8 molto vecchio ti posso giurare! La copertina
+    di rosso lo adorna: \xE8 sulle scale cos\xEC da mostrarsi a ogni persona che
+    ritorna."
+  - "Il secondo libro in Germania ti trasporter\xE0 e nel Medioevo si ambienter\xE0.
+    Per trovarlo la strada \xE8 facile, guarda nelle colonne in maniera agile."
+  - "Grazie a lui ogni parte del mondo vicina \xE8 diventata e la comunicazione 
+    \xE8 migliorata. Per trovarlo basta trovare la direzione del rumore che senti
+    arrivare."
+  - "Tante vite ha salvato e tutto il mondo ne ha giovato. Il suo libro \xE8 di viola
+    vestito e il suo posto vicino al mappamondo \xE8 adibito."
+  entrato: 0
+  start: 0
+--- !u!95 &253098514041476146
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 253098514041476143}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: f5cba7ee7a76aee48acde74a5562c68a, type: 3}
+  m_Controller: {fileID: 9100000, guid: 468341a0f87567f4b95ba1662bc1cb20, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &253098514041476147
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 253098514041476143}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.056895, y: 1.3212147, z: 2.5310419}
+  m_Center: {x: -0.0078121424, y: 0.16060734, z: 0.23759139}
+--- !u!1001 &6782216761827367541
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6257674009799087328, guid: 3ae4103508e99794ba49960cef411fc2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6257674009799087328, guid: 3ae4103508e99794ba49960cef411fc2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6257674009799087328, guid: 3ae4103508e99794ba49960cef411fc2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6257674009799087328, guid: 3ae4103508e99794ba49960cef411fc2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6257674009799087328, guid: 3ae4103508e99794ba49960cef411fc2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6257674009799087328, guid: 3ae4103508e99794ba49960cef411fc2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6257674009799087328, guid: 3ae4103508e99794ba49960cef411fc2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6257674009799087328, guid: 3ae4103508e99794ba49960cef411fc2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6257674009799087328, guid: 3ae4103508e99794ba49960cef411fc2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6257674009799087328, guid: 3ae4103508e99794ba49960cef411fc2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 6257674009799087328, guid: 3ae4103508e99794ba49960cef411fc2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6745382855246122586, guid: 3ae4103508e99794ba49960cef411fc2,
+        type: 3}
+      propertyPath: m_Name
+      value: robottino_conanimazioni
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3ae4103508e99794ba49960cef411fc2, type: 3}
