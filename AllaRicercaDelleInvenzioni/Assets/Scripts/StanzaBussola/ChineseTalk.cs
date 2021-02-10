@@ -35,6 +35,8 @@ public class ChineseTalk : MonoBehaviour
         {
             Talk();
         }
+
+        // MANCA LA CHIAMATA A STOPTALK() QUANDO FINISCE DI DIRE TUTTO
     }
 
     private void OnTriggerEnter(Collider player)
@@ -60,5 +62,13 @@ public class ChineseTalk : MonoBehaviour
         _isTalking = true;
         _animator.SetBool("talking", true);
         Debug.Log("The person is talking");
+    }
+
+    public void StopTalk()
+    {
+        if (_animator == null) return;
+        _isTalking = false;
+        _animator.SetBool("talking", false);
+        Debug.Log("The person stops talking");
     }
 }
