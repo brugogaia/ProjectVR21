@@ -36,7 +36,7 @@ public class RayCast : MonoBehaviour
         {
             _focus.color = new Color(1, 0, 0, 0.5f);
             _pointingGrabbable = hit.transform.GetComponent<Grabbable>();
-            if (Input.GetMouseButtonDown(1) && Grabbing == false && _pointingGrabbable) {
+            if (Input.GetMouseButtonDown(0) && Grabbing == false && _pointingGrabbable) {
                 
                 _pointingGrabbable.Grab(gameObject);
                 Grab(_pointingGrabbable);
@@ -47,7 +47,7 @@ public class RayCast : MonoBehaviour
 
         Debug.DrawRay(rayOrigin, _fpsCameraT.forward * _raycastDistance, Color.blue);
 
-        if (Input.GetMouseButtonDown(0) && Grabbing == true)
+        if (Input.GetMouseButtonDown(1) && Grabbing == true)
             Drop();
     }
 
