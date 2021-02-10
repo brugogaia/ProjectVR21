@@ -13,6 +13,7 @@ TagManager:
   - Penicillina
   - Before
   - After
+  - Persona
   layers:
   - Default
   - TransparentFX
