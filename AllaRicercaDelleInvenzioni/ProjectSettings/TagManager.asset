@@ -9,6 +9,11 @@ TagManager:
   - Bullet
   - Menu
   - Parent
+  - Comodino
+  - Penicillina
+  - Before
+  - After
+  - Persona
   layers:
   - Default
   - TransparentFX

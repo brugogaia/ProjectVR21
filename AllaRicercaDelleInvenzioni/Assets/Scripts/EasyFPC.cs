@@ -11,7 +11,7 @@ public class EasyFPC : MonoBehaviour
     private CharacterController _characterController;
     private float cameraXRotation = 0f;
 
-    public bool stop = false;
+    public static bool stop = false;
 
 
     void Start()

@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class Menù : MonoBehaviour
 {
-    public EasyFPC scriptMovimento;
     public GameObject menuPausa;
     public Image white;
     public Animator anim;
@@ -28,14 +27,14 @@ public class Menù : MonoBehaviour
         if ((Input.GetKeyDown(KeyCode.Escape))&&(!pausa))
         {
             menuPausa.SetActive(true);
-            scriptMovimento.stop = true;
+            EasyFPC.stop = true;
             pausa = true;
         }
     }
 
     public void ExitMenu()
     {
-        scriptMovimento.stop = false;
+        EasyFPC.stop = false;
         pausa = false;
 
         foreach (GameObject i in menu)

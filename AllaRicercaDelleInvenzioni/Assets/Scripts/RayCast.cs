@@ -44,6 +44,7 @@ public class RayCast : MonoBehaviour
              
         } else
             _focus.color = OriginalColor;
+
         Debug.DrawRay(rayOrigin, _fpsCameraT.forward * _raycastDistance, Color.blue);
 
         if (Input.GetMouseButtonDown(0) && Grabbing == true)
