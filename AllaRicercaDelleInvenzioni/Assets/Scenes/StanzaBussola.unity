@@ -1420,6 +1420,34 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1431935970}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &118186260 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 575698941349981485, guid: d5cf1dacc69931142bbc49f1e28683a6,
+    type: 3}
+  m_PrefabInstance: {fileID: 403255496}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &118186261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118186260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65b0bb7c038e5684f8c2c9825c245c62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _canvaSpill: {fileID: 611018804}
+  _canvaMagnetize: {fileID: 1133425180}
+  _canvaStick: {fileID: 649417564}
+  _canvaInsert: {fileID: 1205582993}
+  _canvaTake: {fileID: 1950836565}
+  _bowl: {fileID: 522285597}
+  _carafe: {fileID: 434187973}
+  _needle: {fileID: 1328151721}
+  _magnet: {fileID: 1835944831}
+  _cork: {fileID: 406493559}
 --- !u!1001 &125169933
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5220,7 +5248,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: c0dbf6c71cf19b2408dcae01c53c7a3a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -5845,6 +5873,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2505907358504812747, guid: 07e7bc82966cbef4e899b89b539da437,
     type: 3}
   m_PrefabInstance: {fileID: 518731790}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &522285597 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1179265336072845306, guid: 45cfe721874fe7c48a0a047d56b3234e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1300389877}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &527317483
 GameObject:
@@ -6962,7 +6996,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &611018805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7472,6 +7506,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Constraints
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1439775870643830451, guid: 4f44e81b379b13649a18d4c2c53fe3b1,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1986035511411993606, guid: 4f44e81b379b13649a18d4c2c53fe3b1,
         type: 3}
