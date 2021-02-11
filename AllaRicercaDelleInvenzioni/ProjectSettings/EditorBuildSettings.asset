@@ -24,6 +24,6 @@ EditorBuildSettings:
     path: Assets/Scenes/GiochinoPenicillina.unity
     guid: 0bde917f8f20f8349b8ee330be375e83
   - enabled: 1
-    path: Assets/Scenes/Biblioteca2.unity
+    path: Assets/Scenes/Biblioteca.unity
     guid: 898a465b0ad103c45ad0f85819dd5648
   m_configObjects: {}

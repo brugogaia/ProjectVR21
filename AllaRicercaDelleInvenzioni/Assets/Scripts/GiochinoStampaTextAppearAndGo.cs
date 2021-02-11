@@ -46,7 +46,7 @@ public class GiochinoStampaTextAppearAndGo : MonoBehaviour
         }
         if (!entrato && !finetesto)
         {
-            Debug.Log("Fuori");
+            //Debug.Log("Fuori");
             text1.SetActive(false);
         }
         
