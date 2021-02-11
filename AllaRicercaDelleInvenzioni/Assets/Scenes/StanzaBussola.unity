@@ -1200,7 +1200,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 0.213
+    m_Strength: 0.4
     m_Bias: 0.05
     m_NormalBias: 0.4
     m_NearPlane: 0.2
@@ -1248,7 +1248,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 90818113}
   m_LocalRotation: {x: 0.2216769, y: -0.67747164, z: 0.21826649, w: 0.6665218}
-  m_LocalPosition: {x: -1.06, y: 2.47, z: -0.01}
+  m_LocalPosition: {x: 2.34, y: 1.54, z: -0.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1438,6 +1438,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65b0bb7c038e5684f8c2c9825c245c62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _canvaSpill: {fileID: 0}
+  _canvaMagnetize: {fileID: 0}
+  _canvaStick: {fileID: 0}
+  _canvaInsert: {fileID: 0}
+  _canvaTake: {fileID: 0}
+  _bowl: {fileID: 0}
+  _carafe: {fileID: 0}
+  _needle: {fileID: 0}
+  _magnet: {fileID: 0}
+  _cork: {fileID: 0}
 --- !u!1001 &125169933
 PrefabInstance:
   m_ObjectHideFlags: 0
