@@ -8,6 +8,7 @@ public class DisappearOnDrop : Grabbable
     private Collider _collider;
     private Vector3 _origin;
     [SerializeField] GameObject _objectiveObj;
+    [SerializeField] GameObject _activableObj;
     // Start is called before the first frame update
     protected override void Start()
     {
@@ -27,10 +28,13 @@ public class DisappearOnDrop : Grabbable
     {
         _collider.enabled = true;
         _rigidbody.isKinematic = false;
-        if (Vector3.Distance(_objectiveObj.transform.position, transform.position) < 2.0f)
+        if (Vector3.Distance(_objectiveObj.transform.position, transform.position) < 1.2f)
         {
             transform.position = _origin;
             gameObject.SetActive(false);
+            if (_activableObj != null) {
+                _activableObj.SetActive(true);
+            }
         }
     }
 }
