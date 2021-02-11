@@ -7,7 +7,8 @@ public class PrendiCaratteri : MonoBehaviour
     private bool entrato = false;
     public GameObject text1;
     public GiochinoStampa fineGiocoTrue;
-    
+    public PrintGutenberg script_pressa;
+
     //RigidbodyFirstPersonController scriptFP = null;
 
 
@@ -25,20 +26,17 @@ public class PrendiCaratteri : MonoBehaviour
     void Update()
     {
        
-        if (entrato && fineGiocoTrue.fineGioco)
+        if (entrato && fineGiocoTrue.fineGioco && !script_pressa.libro_move)
         {
-            Debug.Log("ENTRATO NEI CARATTERI");
+            //Debug.Log("ENTRATO NEI CARATTERI");
             text1.SetActive(true);
 
-            if (Input.GetMouseButtonDown(0))
-            {
-                
-            }
+            
 
         }
         if (!entrato && fineGiocoTrue.fineGioco)
         {
-            Debug.Log("Fuori DAI CARATTERI");
+            //Debug.Log("Fuori DAI CARATTERI");
             text1.SetActive(false);
         }
 
