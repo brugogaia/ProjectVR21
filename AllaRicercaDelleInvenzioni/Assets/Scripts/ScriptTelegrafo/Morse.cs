@@ -25,6 +25,7 @@ public class Morse : MonoBehaviour
     private bool secondaparte=false;
     private bool terzaparte=false;
     private bool quartaparte=false;
+    private bool quintaparte=false;
     private bool primaparte=false;
     private KeyCode[] tastiera = new KeyCode []{ KeyCode.Alpha0, KeyCode.Alpha1, KeyCode.Alpha2, KeyCode.Alpha3, KeyCode.Alpha4, KeyCode.Alpha5, KeyCode.Alpha6, KeyCode.Alpha7, KeyCode.Alpha8, KeyCode.Alpha9, KeyCode.KeypadPlus, KeyCode.KeypadMinus };
     private KeyCode[] risposta=new KeyCode[]{KeyCode.Alpha5, KeyCode.KeypadPlus, KeyCode.Alpha7};
@@ -33,6 +34,7 @@ public class Morse : MonoBehaviour
     private List<int> codice1= new List<int>(){1,2,2,2,2};
     private List<int> codice2= new List<int>(){1,1,2,2,2};
     private List<int> codice3= new List<int>(){2,1,1,1,1};
+    private List<int> codiceSOS= new List<int>(){1,1,1,2,2,2,1,1,1};
 
 
     public AudioSource audioData1;
@@ -56,6 +58,7 @@ public class Morse : MonoBehaviour
     public GameObject canva1;
     public GameObject canva2;
     public GameObject canvaText;
+    public GameObject canvaText2;
     public GameObject canvaEqual;
     public GameObject canva9;
     public GameObject canvaMinus;
@@ -72,6 +75,7 @@ public class Morse : MonoBehaviour
     	canva2.SetActive(false);
       	canva1.SetActive(false);
       	canvaText.SetActive(false);
+      	canvaText2.SetActive(false);
         canvaEqual.SetActive(false);
         canva9.SetActive(false);
         canva6.SetActive(false);
@@ -135,7 +139,7 @@ public class Morse : MonoBehaviour
 					                 downTimeRight=Time.time;
 					                 canvaPlus.SetActive(true);
 					                 
-					                 audioData3.PlayDelayed(4.0f);
+					                 audioData3.PlayDelayed(2.0f);
 					                 
 					                 }else{
 					                 	Debug.Log($"Wrong");
@@ -207,6 +211,7 @@ if(secondaparte){
 				 				secondaparte=false;
 				 				terzaparte=true;
 				 				canvaText.SetActive(true);
+				 				codice.Clear();
 				 			}else{
 				 				Debug.Log($"DIVERSI");
 				 				wrongAnswer.Play();
@@ -259,7 +264,7 @@ if(secondaparte){
 					               secondNumber2=true;	
 					              	canva9.SetActive(true);
 					               rightAnswer.Play();
-					               audioDataMinus.PlayDelayed(4.0f);
+					               audioDataMinus.PlayDelayed(2.0f);
 					               
 
 
@@ -285,7 +290,7 @@ if(secondaparte){
 					                 downTimeRight=Time.time;
 					                 canvaMinus.SetActive(true);
 					                 
-					                 audioDatatre.PlayDelayed(4.0f);
+					                 audioDatatre.PlayDelayed(2.0f);
 					                 
 					                 }else{
 					                 	Debug.Log($"Wrong");
@@ -322,7 +327,7 @@ if(secondaparte){
 	} //fine terza parte 
 
 	if(quartaparte){
-		codice1.Clear();
+		
 			if(Input.GetKeyDown(KeyCode.Space)){
 				 	bip.Play();
 				 	_animator.SetBool("Dot", true);
@@ -354,6 +359,9 @@ if(secondaparte){
 				 				tempo=false;
 				 				canva6.SetActive(true);
 				 				quartaparte=false;
+				 				quintaparte=true;
+				 				canvaText.SetActive(true);
+				 				codice.Clear();
 				 				
 				 			}else{
 				 				Debug.Log($"DIVERSI");
@@ -367,6 +375,65 @@ if(secondaparte){
 				 }
 
 	}//fine quarta parte
+
+
+	if(quintaparte){
+
+		if(Input.GetKeyDown(KeyCode.Return)){
+			canvaText.SetActive(false);
+			canva9.SetActive(false);
+    		canvaMinus.SetActive(false);
+    		canvaTre.SetActive(false);
+    		canva6.SetActive(false);
+			canvaEqual.SetActive(false);
+			canvaText2.SetActive(true);
+		}
+			if(Input.GetKeyDown(KeyCode.Space)){
+				 	bip.Play();
+				 	_animator.SetBool("Dot", true);
+				 	downTimeRight=Time.time;
+				 	
+				 }
+				 if(Input.GetKeyUp(KeyCode.Space)){
+				 	_animator.SetBool("Dot", false);
+				 	 tempo=true;
+				 	 bip.Stop();
+				 	if(Time.time-downTimeRight>0.3){
+				 		codice.Add(2);
+				 		Debug.Log($"linea");
+				 		
+				 	}else{
+				 		Debug.Log($"punto"); 
+				 		codice.Add(1);
+				 		
+				 	}
+				 }
+
+				  if(tempo){
+				 		downTimeRight2=Time.time;
+				 		if(Time.time-downTimeRight>2){
+				 			
+				 				if(Uguale(codiceSOS,codice)){
+				 					 rightAnswer.Play();
+				 				Debug.Log($"UGUALI");
+				 				tempo=false;
+				 				
+				 				
+				 				quintaparte=false;
+				 				
+				 				codice.Clear();
+				 				
+				 			}else{
+				 				Debug.Log($"DIVERSI");
+				 				wrongAnswer.Play();
+				 				tempo=false;
+				 				codice.Clear();
+				 			}
+				 		
+				 				
+				 		}
+				 }
+	}
 
 }	// fine start gioco
 
