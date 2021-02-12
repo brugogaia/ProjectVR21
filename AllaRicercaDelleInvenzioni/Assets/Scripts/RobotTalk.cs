@@ -10,6 +10,7 @@ public class RobotTalk : MonoBehaviour {
     public GameObject talk_box;
     private AudioSource source;
     private Animator anim;
+    private bool stopmenu;
     public string[] sentences;
     public string[] riddles;
     public bool entrato;
@@ -34,48 +35,70 @@ public class RobotTalk : MonoBehaviour {
 
     private void Update() {
 
-        if (entrato && (index_s <= sentences.Length - 1))
+        if (EasyFPC.stop==true)
         {
-            if (start)
-            {
-                anim.SetBool("wakeup", true);
-                anim.SetBool("head", true);
-                anim.SetBool("sleep", false);
-                StartCoroutine(Type(sentences, index_s));
-                start = false;
-            }
+            Debug.Log("stopmenu");
+            stopmenu = true;
+        }else
+        {
+            Debug.Log("exitmenu");
+            stopmenu = false;
+        }
 
-            if (textDisplay.text == sentences[index_s])
+        if (!stopmenu)
+        {
+            if (entrato && (index_s <= sentences.Length - 1))
             {
-                source.Stop();
-                anim.SetBool("head", false);
-                if (index_s < sentences.Length - 1)
+                if (start)
                 {
-                    e.enabled = true;
-                    if (Input.GetKeyDown(KeyCode.E))
-                    {
-                        NextSentence();
-                    }
-                }else if (index_s == sentences.Length - 1)
-                {
-                    index_s++;
+                    anim.SetBool("wakeup", true);
+                    anim.SetBool("head", true);
+                    anim.SetBool("sleep", false);
+                    StartCoroutine(Type(sentences, index_s));
+                    start = false;
                 }
-                
+
+                if (textDisplay.text == sentences[index_s])
+                {
+                    source.Stop();
+                    anim.SetBool("head", false);
+                    if (index_s < sentences.Length - 1)
+                    {
+                        e.enabled = true;
+                        if (Input.GetKeyDown(KeyCode.E))
+                        {
+                            NextSentence();
+                        }
+                    }
+                    else if (index_s == sentences.Length - 1)
+                    {
+                        index_s++;
+                    }
+
+                }
+            }
+            else if (entrato && (index_r <= riddles.Length - 1))
+            {
+                if (start)
+                {
+                    StartCoroutine(Type(riddles, index_r));
+                    start = false;
+                }
+
+                if (textDisplay.text == riddles[index_r])
+                {
+                    source.Stop();
+                    anim.SetBool("head", false);
+                }
             }
         }
-        else if(entrato && (index_r <= riddles.Length - 1))
+        else
         {
-            if (start)
-            {
-                StartCoroutine(Type(riddles, index_r));
-                start = false;
-            }
-
-            if (textDisplay.text == riddles[index_r])
-            {
-                source.Stop();
-                anim.SetBool("head", false);
-            }
+            talk_box.SetActive(false);
+            textDisplay.text = "";
+            e.enabled = false;
+            textDisplay.enabled = false;
+            source.Stop();
         }
     }
 
@@ -101,7 +124,7 @@ public class RobotTalk : MonoBehaviour {
         {
             if (!entrato)
             {
-                start = true;
+                start = true;              
             }
 
             entrato = true;

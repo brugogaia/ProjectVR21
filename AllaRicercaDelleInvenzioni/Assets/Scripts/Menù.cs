@@ -7,8 +7,8 @@ using UnityEngine.UI;
 public class Menù : MonoBehaviour
 {
     public GameObject menuPausa;
-    public Image white;
-    public Animator anim;
+   // public Image white;
+    //public Animator anim;
     private GameObject[] menu;
     private bool pausa;
 
@@ -55,12 +55,12 @@ public class Menù : MonoBehaviour
         //StartCoroutine(Fading());
     }
 
-    IEnumerator Fading()
+    /*IEnumerator Fading()
     {
         anim.SetBool("Fade", true);
         yield return new WaitUntil(() => white.color.a == 1);
         Debug.Log("FINE");
         SceneManager.LoadScene("Inizio", LoadSceneMode.Single);
-    }
+    }*/
 
 }
