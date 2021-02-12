@@ -426,7 +426,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &23963754
 PrefabInstance:
@@ -2799,7 +2799,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &222481061
 PrefabInstance:
@@ -3535,8 +3535,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 68.8, y: -436.89996}
-  m_SizeDelta: {x: 1351.2476, y: 123.669525}
+  m_AnchoredPosition: {x: 132.1, y: -436.89996}
+  m_SizeDelta: {x: 1224.7393, y: 123.669525}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &295609403
 MonoBehaviour:
@@ -3755,7 +3755,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &312824465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12070,7 +12070,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1162325865
 PrefabInstance:
@@ -14949,7 +14949,7 @@ Transform:
   - {fileID: 1205582997}
   - {fileID: 1950836569}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1529243003
 PrefabInstance:
@@ -16128,15 +16128,14 @@ MonoBehaviour:
   e: {fileID: 737454354}
   talk_box: {fileID: 2118251087}
   sentences:
-  - "Ciao! Da quanto tempo che non parlavo con una persona in carne e ossa! Ma non
-    \xE8 questo il modo di presentarsi... Mi chiamo Xiong Wei Jian e sono il protettore
-    della stanza della bussola. Lo sapevi che la scoperta di questa invenzione \xE8
-    attribuita ai cinesi? Sono stati loro a capire le propriet\xE0 meravigliose del
-    campo magnetico."
-  - "La bussola \xE8 infatti uno strumento potente, perch\xE9 permette di orientarsi
-    anche quando ci si perde. Ed \xE8 semplicissimo costruirne una! Provaci pure
-    tu, sul tavolo troverai tutto l\u2019occorrente (e anche di pi\xF9). Chiss\xE0,
-    magari potrebbe venirti utile per orientarti per uscire da questa stanza..."
+  - "Niao! Da quanto tempo che non palavo con una pelsona in calne e ossa! Ma non
+    \xE8 questo il modo di plesentalsi... Mi chiamo Xiong Wei Jian e sono il plotettole
+    della stanza. Lo sapevi che la scopelta della bussola \xE8 attlibuita ai cinesi?
+    Sono stati lolo a capile le plopliet\xE0 melavigliose del campo magnetico."
+  - "La bussola \xE8 infatti uno stlumento potente, pelch\xE9 pelmette di olientalsi
+    anche quando ci si pelde. Ed \xE8 semplicissimo costluilne una! Plovaci pule
+    tu, sul tavolo tlovelai tutto l\u2019occollente (e anche di pi\xF9). Chiss\xE0,
+    magali potlebbe venilti utile pel olientalti pel uscile da questa stanza..."
 --- !u!136 &1663262626
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -17478,7 +17477,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1756886543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17552,7 +17551,7 @@ RectTransform:
   m_Children:
   - {fileID: 1946655811}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -21668,8 +21667,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -441.59998}
-  m_SizeDelta: {x: 145.63808, y: 100}
+  m_AnchoredPosition: {x: 0, y: -437.4}
+  m_SizeDelta: {x: 145.63808, y: 31.60941}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2118251089
 MonoBehaviour:
@@ -21690,7 +21689,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4e39e0a184b3b0c4691e7741b875a762, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 702046be3bef8f146ad2321914b81f8a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
