@@ -17,6 +17,8 @@ public class RayCast : MonoBehaviour
     private Grabbable _pointingGrabbable;
     private Color OriginalColor;
 
+    public GameObject _raycasted;  // AGGIUNTA
+
     void Start()
     {
         OriginalColor = _focus.color;
@@ -34,6 +36,7 @@ public class RayCast : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, _raycastDistance))
         {
+            _raycasted = hit.transform.gameObject;
             _focus.color = new Color(1, 0, 0, 0.5f);
             _pointingGrabbable = hit.transform.GetComponent<Grabbable>();
             if (Input.GetMouseButtonDown(0) && Grabbing == false && _pointingGrabbable) {

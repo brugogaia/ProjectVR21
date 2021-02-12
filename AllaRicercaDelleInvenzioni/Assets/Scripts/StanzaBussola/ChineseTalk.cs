@@ -14,7 +14,6 @@ public class ChineseTalk : MonoBehaviour
     public GameObject talk_box;
     public string[] sentences;
     private bool _enter = false;
-    private bool _isTalking;
     private bool start_talking;
     private int index_s;
 
@@ -25,7 +24,6 @@ public class ChineseTalk : MonoBehaviour
         _person = GameObject.FindGameObjectWithTag("Persona");
         source = GetComponent<AudioSource>();
         _animator = _person.GetComponent<Animator>();
-        _isTalking = false;
 
         talk_box.SetActive(false);
         textDisplay.enabled = false;
