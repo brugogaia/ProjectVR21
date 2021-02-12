@@ -1852,7 +1852,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 0.5
+    m_Strength: 0.69
     m_Bias: 0.05
     m_NormalBias: 0.4
     m_NearPlane: 0.2
@@ -4799,8 +4799,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuPausa: {fileID: 1957853161}
-  white: {fileID: 2105327002}
-  anim: {fileID: 2105327001}
 --- !u!4 &1495818390
 Transform:
   m_ObjectHideFlags: 0
@@ -8419,7 +8417,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3482875702754341156}
   m_LocalRotation: {x: -0.7071069, y: 2.7476637e-16, z: -4.710281e-17, w: 0.7071067}
-  m_LocalPosition: {x: -0, y: 0.01, z: 0.01285}
+  m_LocalPosition: {x: -0, y: 0.01, z: 0.01259}
   m_LocalScale: {x: 0.99999976, y: 1.2500001, z: 0.39999992}
   m_Children: []
   m_Father: {fileID: 4581642642988298931}
@@ -8684,7 +8682,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8341065000775557380}
   m_LocalRotation: {x: -0.5, y: 0.5000002, z: -0.50000006, w: 0.49999973}
-  m_LocalPosition: {x: 0.01, y: -0, z: 0.01245}
+  m_LocalPosition: {x: 0.01, y: -0, z: 0.0125}
   m_LocalScale: {x: 0.99999976, y: 1.2500001, z: 0.39999992}
   m_Children: []
   m_Father: {fileID: 4581642642988298931}

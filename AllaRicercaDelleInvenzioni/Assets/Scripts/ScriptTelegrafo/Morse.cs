@@ -20,16 +20,18 @@ public class Morse : MonoBehaviour
     
     private bool secondNumber=false;
     private bool thirdNumber=false;
-     private bool secondNumber2=false;
+    private bool secondNumber2=false;
     private bool thirdNumber2=false;
     private bool secondaparte=false;
     private bool terzaparte=false;
     private bool quartaparte=false;
     private bool quintaparte=false;
     private bool primaparte=false;
-    private KeyCode[] tastiera = new KeyCode []{ KeyCode.Alpha0, KeyCode.Alpha1, KeyCode.Alpha2, KeyCode.Alpha3, KeyCode.Alpha4, KeyCode.Alpha5, KeyCode.Alpha6, KeyCode.Alpha7, KeyCode.Alpha8, KeyCode.Alpha9, KeyCode.KeypadPlus, KeyCode.KeypadMinus };
+    private KeyCode[] tastiera = new KeyCode []{ KeyCode.Alpha0, KeyCode.Alpha1, KeyCode.Alpha2, KeyCode.Alpha3, KeyCode.Alpha4, KeyCode.Alpha5, KeyCode.Alpha6, KeyCode.Alpha7, KeyCode.Alpha8, KeyCode.Alpha9, KeyCode.KeypadPlus, KeyCode.KeypadMinus, KeyCode.Keypad1,KeyCode.Keypad2,KeyCode.Keypad3,KeyCode.Keypad4,KeyCode.Keypad5,KeyCode.Keypad6,KeyCode.Keypad7,KeyCode.Keypad8,KeyCode.Keypad9,KeyCode.Keypad0 };
     private KeyCode[] risposta=new KeyCode[]{KeyCode.Alpha5, KeyCode.KeypadPlus, KeyCode.Alpha7};
+    private KeyCode[] rispostaPad=new KeyCode[]{KeyCode.Keypad5, KeyCode.KeypadPlus, KeyCode.Keypad7};
     private KeyCode[] risposta2=new KeyCode[]{KeyCode.Alpha9, KeyCode.KeypadMinus, KeyCode.Alpha3};
+     private KeyCode[] risposta2Pad=new KeyCode[]{KeyCode.Keypad9, KeyCode.KeypadMinus, KeyCode.Keypad3};
     private List<int> codice= new List<int>();
     private List<int> codice1= new List<int>(){1,2,2,2,2};
     private List<int> codice2= new List<int>(){1,1,2,2,2};
@@ -107,7 +109,7 @@ public class Morse : MonoBehaviour
 					    for( int j = 0 ; j < tastiera.Length ; ++j )
 					     {
 					          if( Input.GetKeyDown( tastiera[j] ))
-					          {		if(tastiera[j]==risposta[0]){
+					          {		if(tastiera[j]==risposta[0]||tastiera[j]==rispostaPad[0]){
 					                 Debug.Log(tastiera[j] );
 					               downTimeRight=Time.time;
 					               secondNumber=true;	
@@ -131,7 +133,7 @@ public class Morse : MonoBehaviour
 					    	for( int k = 0 ; k < tastiera.Length ; ++k )
 					     {
 					          if( Input.GetKeyDown( tastiera[k] ))
-					          {		if(tastiera[k]==risposta[1]){
+					          {		if(tastiera[k]==risposta[1]||tastiera[k]==rispostaPad[1]){
 					                 Debug.Log(tastiera[k] );
 					                 rightAnswer.Play();
 					                 secondNumber=false;
@@ -156,7 +158,7 @@ public class Morse : MonoBehaviour
 						    	for( int k = 0 ; k < tastiera.Length ; ++k )
 						     {
 						          if( Input.GetKeyDown( tastiera[k] ))
-						          {		if(tastiera[k]==risposta[2]){
+						          {		if(tastiera[k]==risposta[2]||tastiera[k]==rispostaPad[2]){
 						                 Debug.Log(tastiera[k] );
 						                 rightAnswer.Play();
 						                 thirdNumber=false;
@@ -258,7 +260,7 @@ if(secondaparte){
 					    for( int j = 0 ; j < tastiera.Length ; ++j )
 					     {
 					          if( Input.GetKeyDown( tastiera[j] ))
-					          {		if(tastiera[j]==risposta2[0]){
+					          {		if(tastiera[j]==risposta2[0]||tastiera[j]==risposta2Pad[0]){
 					                 Debug.Log(tastiera[j] );
 					               downTimeRight=Time.time;
 					               secondNumber2=true;	
@@ -282,7 +284,7 @@ if(secondaparte){
 					    	for( int k = 0 ; k < tastiera.Length ; ++k )
 					     {
 					          if( Input.GetKeyDown( tastiera[k] ))
-					          {		if(tastiera[k]==risposta2[1]){
+					          {		if(tastiera[k]==risposta2[1]||tastiera[k]==risposta2Pad[1]){
 					                 Debug.Log(tastiera[k] );
 					                 rightAnswer.Play();
 					                 secondNumber2=false;
@@ -307,7 +309,7 @@ if(secondaparte){
 						    	for( int k = 0 ; k < tastiera.Length ; ++k )
 						     {
 						          if( Input.GetKeyDown( tastiera[k] ))
-						          {		if(tastiera[k]==risposta2[2]){
+						          {		if(tastiera[k]==risposta2[2]||tastiera[k]==risposta2Pad[2]){
 						                 Debug.Log(tastiera[k] );
 						                 rightAnswer.Play();
 						                 thirdNumber2=false;
