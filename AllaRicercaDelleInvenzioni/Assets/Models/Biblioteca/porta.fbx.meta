@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e6cd7638e593cc54c928a46f934612df
+guid: 0144ff7507acdff4190f5522b2b8527c
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
@@ -7,19 +7,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Ferro
+    second: {fileID: 2100000, guid: 30c4e302c6b01da41b9e38725edcee63, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: LEGNO
-    second: {fileID: 2100000, guid: 0a63aadae32be28449f35f60c4da6550, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: LEGNO.001
-    second: {fileID: 2100000, guid: 45ed09d56e4ffc94788466f8cf7f0144, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: LEGNO.003
-    second: {fileID: -7658112547643944253, guid: d74688e9f1e63bf43afddc8150e0a960,
-      type: 3}
+    second: {fileID: 2100000, guid: b024838796c15874297a19fcc68c3e16, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

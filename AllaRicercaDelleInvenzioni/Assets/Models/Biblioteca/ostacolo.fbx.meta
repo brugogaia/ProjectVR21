@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 534b26c2370375d4c980e7ca0b7d6bc8
+guid: 91a5b3df6655ea841b68a133837881c1
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
@@ -7,18 +7,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.001
-    second: {fileID: 2100000, guid: ee72689900b9f294fb32081803b735be, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material.002
-    second: {fileID: 2100000, guid: 9ebe4615185101f41a53adb5985cc20d, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
       name: Material.003
-    second: {fileID: 2100000, guid: 9ebe4615185101f41a53adb5985cc20d, type: 2}
+    second: {fileID: 2100000, guid: 0eeccba2339349443af40818ba4d69b9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: OroOttone
+    second: {fileID: 2100000, guid: ef97f341029778e47b17000699dd1603, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: nastro
+    second: {fileID: 2100000, guid: 1588a246e5e0d46439be3bbe6dd250cd, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
