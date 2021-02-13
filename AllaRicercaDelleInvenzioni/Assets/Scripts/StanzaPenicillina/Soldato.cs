@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Soldato : MonoBehaviour
 {
+    [SerializeField] private GameObject _exit;
     private Animator _animator;
     private GameObject _before;
     private GameObject _after;
@@ -33,9 +34,10 @@ public class Soldato : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    { 
+    {
+        if (PlayerPrefs.GetInt("Cura") == 1)
+            _cured = true;
         // MANCA DA SETTARE _CURED TRUE QUANDO FINISCE IL GIOCHINO
-        _cured = true;
         if (_cured)
         {
             _before.SetActive(false);
@@ -44,7 +46,8 @@ public class Soldato : MonoBehaviour
             if (_animator == null) return;
             _animator.SetBool("cured", true);
 
-            Talking();  
+            Talking();
+            _exit.SetActive(true);
         }
         else
         {
