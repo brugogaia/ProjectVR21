@@ -511,10 +511,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _target: Biblioteca
-  _onInteraction: 1
+  _onInteraction: 0
   _onButton: 0
   _isStartMenu: 1
   _startButton: {fileID: 0}
+  _autotrigger: 1
 --- !u!1 &1514961863
 GameObject:
   m_ObjectHideFlags: 0

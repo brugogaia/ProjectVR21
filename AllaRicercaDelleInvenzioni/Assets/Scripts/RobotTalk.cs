@@ -31,6 +31,9 @@ public class RobotTalk : MonoBehaviour {
 
         anim.SetBool("sleep", true);
 
+        index_r = PlayerPrefs.GetInt("Progress");
+        index_s = 7;
+
     }
 
     private void Update() {

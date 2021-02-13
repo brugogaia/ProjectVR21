@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Soldato : MonoBehaviour
 {
-    [SerializeField] private GameObject _exit;
+    public GameObject _exit;
     private Animator _animator;
     private GameObject _before;
     private GameObject _after;
@@ -48,6 +48,7 @@ public class Soldato : MonoBehaviour
 
             Talking();
             _exit.SetActive(true);
+
         }
         else
         {

@@ -2676,13 +2676,14 @@ GameObject:
   - component: {fileID: 859782839}
   - component: {fileID: 859782838}
   - component: {fileID: 859782840}
+  - component: {fileID: 859782841}
   m_Layer: 0
   m_Name: Exit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &859782837
 Transform:
   m_ObjectHideFlags: 0
@@ -2738,6 +2739,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 287651c68bf6dff4b9d60ee64ed0c8bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _stanza: 4
+--- !u!114 &859782841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 859782836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d378cee716e128459cdb39cc36d822b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &869113513
@@ -5064,7 +5078,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 464023cd09d639e48bbf52ff58d484d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _exit: {fileID: 0}
+  _exit: {fileID: 859782836}
   textDisplay: {fileID: 1206447984}
   talk_box: {fileID: 36952903}
   sentences:

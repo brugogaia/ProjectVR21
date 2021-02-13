@@ -923,6 +923,7 @@ GameObject:
   - component: {fileID: 1786710566}
   - component: {fileID: 1786710565}
   - component: {fileID: 1786710564}
+  - component: {fileID: 1786710567}
   m_Layer: 5
   m_Name: Button_Inizia
   m_TagString: Untagged
@@ -1029,6 +1030,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1786710562}
   m_CullTransparentMesh: 0
+--- !u!114 &1786710567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1786710562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9941da3574c9404ba8540c33fd0dc44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _target: Biblioteca
+  _onInteraction: 0
+  _onButton: 1
+  _isStartMenu: 1
+  _startButton: {fileID: 1786710564}
+  _autotrigger: 0
 --- !u!1 &1806965893
 GameObject:
   m_ObjectHideFlags: 0

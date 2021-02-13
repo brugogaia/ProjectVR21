@@ -14,7 +14,7 @@ public class CPNTSystem : MonoBehaviour
         Player = GameObject.FindGameObjectWithTag("Player");
         if (_progress != 0) 
             Player.transform.position = Checkpoints[_progress-1].transform.position;
-        Debug.Log(PlayerPrefs.GetInt("Progress"));
+        Debug.LogError(_progress);
     }
 
     // Update is called once per frame

@@ -2,13 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RoomEnder : MonoBehaviour
+public class MenuSwithcer : MonoBehaviour
 {
-    [SerializeField] private int _stanza;
+    [SerializeField] private GameObject[] _menues;
     // Start is called before the first frame update
     void Start()
     {
-        PlayerPrefs.SetInt("Progress", _stanza);
+        foreach (GameObject menu in _menues)
+            menu.SetActive(false);
+        _menues[PlayerPrefs.GetInt("Progress")].SetActive(true);
     }
 
     // Update is called once per frame
