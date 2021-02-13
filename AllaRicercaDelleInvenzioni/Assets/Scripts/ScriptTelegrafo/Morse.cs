@@ -31,7 +31,7 @@ public class Morse : MonoBehaviour
     private KeyCode[] risposta=new KeyCode[]{KeyCode.Alpha5, KeyCode.KeypadPlus, KeyCode.Alpha7};
     private KeyCode[] rispostaPad=new KeyCode[]{KeyCode.Keypad5, KeyCode.KeypadPlus, KeyCode.Keypad7};
     private KeyCode[] risposta2=new KeyCode[]{KeyCode.Alpha9, KeyCode.KeypadMinus, KeyCode.Alpha3};
-     private KeyCode[] risposta2Pad=new KeyCode[]{KeyCode.Keypad9, KeyCode.KeypadMinus, KeyCode.Keypad3};
+    private KeyCode[] risposta2Pad=new KeyCode[]{KeyCode.Keypad9, KeyCode.KeypadMinus, KeyCode.Keypad3};
     private List<int> codice= new List<int>();
     private List<int> codice1= new List<int>(){1,2,2,2,2};
     private List<int> codice2= new List<int>(){1,1,2,2,2};
@@ -66,6 +66,7 @@ public class Morse : MonoBehaviour
     public GameObject canvaMinus;
     public GameObject canva6;
     public GameObject canvaTre;
+    public GameObject canvaFineGioco;
 
    
   
@@ -83,6 +84,7 @@ public class Morse : MonoBehaviour
         canva6.SetActive(false);
         canvaTre.SetActive(false);
         canvaMinus.SetActive(false);
+        canvaFineGioco.SetActive(false);
         StartGioco=false;
         telegrafo=GameObject.FindGameObjectWithTag("Telegrafo");
         _animator=telegrafo.GetComponent<Animator>(); 
@@ -417,19 +419,18 @@ if(secondaparte){
 				 			
 				 				if(Uguale(codiceSOS,codice)){
 				 					 rightAnswer.Play();
-				 				Debug.Log($"UGUALI");
-				 				tempo=false;
+				 					Debug.Log($"UGUALI");
+				 					tempo=false;
+				 					quintaparte=false;
+				 					codice.Clear();
+				 					canvaText2.SetActive(false);
+				 					canvaFineGioco.SetActive(true);
 				 				
-				 				
-				 				quintaparte=false;
-				 				
-				 				codice.Clear();
-				 				
-				 			}else{
-				 				Debug.Log($"DIVERSI");
-				 				wrongAnswer.Play();
-				 				tempo=false;
-				 				codice.Clear();
+				 				}else{
+				 					Debug.Log($"DIVERSI");
+				 					wrongAnswer.Play();
+				 					tempo=false;
+				 					codice.Clear();
 				 			}
 				 		
 				 				
