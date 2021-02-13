@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class StartGame : MonoBehaviour
 {
     [SerializeField] GameObject _cure;
+    [SerializeField] GameObject _soldato;
     [SerializeField] SimpleGrabbable _grabbed;
     [SerializeField] GameObject _text;
     private bool _enter;
@@ -64,6 +65,7 @@ public class StartGame : MonoBehaviour
         if (player.gameObject.tag == "Player")
         {
             _enter = true;
+            _soldato.GetComponent<SceneChanger>().enabled = true;
         }
     }
 
@@ -72,6 +74,7 @@ public class StartGame : MonoBehaviour
         if (player.gameObject.tag == "Player")
         {
             _enter = false;
+            _soldato.GetComponent<SceneChanger>().enabled = false;
         }
     }
 }

@@ -39,6 +39,8 @@ public class BossBehaviour : MonoBehaviour
 
             GameObject Particles = Instantiate(_particles, transform.position, Quaternion.identity);
             Particles.GetComponent<ParticleSystem>().Play();
+            PlayerPrefs.SetInt("Cura", 1);
+            Chara.GetComponent<SceneChanger>().enabled = true;
 
             Destroy(gameObject);
         }
@@ -55,7 +57,7 @@ public class BossBehaviour : MonoBehaviour
             ThisTimer = 1.0f;
         }
 
-        switch (DirSwitch)
+        /*switch (DirSwitch)
         {
             case 0:
                 transform.Translate(transform.right * _speed * Time.deltaTime, Space.World);
@@ -72,7 +74,7 @@ public class BossBehaviour : MonoBehaviour
             default:
                 Direction = 1;
                 break;
-        }
+        }*/
 
     }
 

@@ -10,6 +10,7 @@ public class SceneChanger: MonoBehaviour
     [SerializeField] private bool _onButton;
     [SerializeField] private bool _isStartMenu;
     [SerializeField] private Button _startButton;
+    [SerializeField] private bool _autotrigger;
     private Button _btn;
     private GameObject _player;
 
@@ -23,12 +24,14 @@ public class SceneChanger: MonoBehaviour
             _btn = _startButton.GetComponent<Button>();
             _btn.onClick.AddListener(TransferToScene);
         }
+        if (_autotrigger)
+            TransferToScene();
 
     }
 
-    private void OnCollisionEnter(Collision player)
+    private void OnTriggerEnter(Collider player)
     {
-        if (player.collider.tag == "Player")
+        if (player.tag == "Player")
             TransferToScene();
     }
     

@@ -472,6 +472,7 @@ GameObject:
   - component: {fileID: 342938190}
   - component: {fileID: 342938192}
   - component: {fileID: 342938193}
+  - component: {fileID: 342938194}
   m_Layer: 0
   m_Name: Ship
   m_TagString: Player
@@ -585,6 +586,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.6, y: 0.90217555}
   m_EdgeRadius: 0
+--- !u!114 &342938194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 342938189}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9941da3574c9404ba8540c33fd0dc44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _target: StanzaPenicillina
+  _onInteraction: 0
+  _onButton: 0
+  _isStartMenu: 0
+  _startButton: {fileID: 0}
+  _autotrigger: 1
 --- !u!1 &348559771
 GameObject:
   m_ObjectHideFlags: 0
