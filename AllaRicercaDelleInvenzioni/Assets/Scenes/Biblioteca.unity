@@ -5679,7 +5679,7 @@ BoxCollider:
   m_GameObject: {fileID: 90679279}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 3.1432128, y: 2.613285, z: 3.996258}
   m_Center: {x: -1.1071831, y: 1.2990043, z: 0.025076035}
@@ -10509,6 +10509,42 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &335946503 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6281859578535519931, guid: be7e447331c65ff4eb643d1837c80375,
+    type: 3}
+  m_PrefabInstance: {fileID: 1356579113}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &335946504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335946503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9941da3574c9404ba8540c33fd0dc44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _target: StanzaBussola
+  _onInteraction: 1
+  _onButton: 0
+  _isStartMenu: 0
+  _startButton: {fileID: 0}
+--- !u!65 &335946507
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335946503}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.004000001, y: 0.0059999996, z: 0.0010000009}
+  m_Center: {x: -2.030888e-11, y: -0.000021490761, z: 0.0004772141}
 --- !u!1 &336926514
 GameObject:
   m_ObjectHideFlags: 0
@@ -14090,6 +14126,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 6606468617564257020, guid: 1e406e1461de0e94ba5783cdb9a615df,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 6606468617564257021, guid: 1e406e1461de0e94ba5783cdb9a615df,
         type: 3}
       propertyPath: m_RootOrder
@@ -14390,7 +14431,7 @@ BoxCollider:
   m_GameObject: {fileID: 446533060}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 3.1432128, y: 2.613285, z: 3.996258}
   m_Center: {x: -1.107185, y: 1.2990043, z: 0.025076035}
@@ -17532,6 +17573,42 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &502655695 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6281859578535519931, guid: be7e447331c65ff4eb643d1837c80375,
+    type: 3}
+  m_PrefabInstance: {fileID: 64106020}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &502655698
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 502655695}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.004000001, y: 0.0059999996, z: 0.0010000009}
+  m_Center: {x: 0.0000000018423363, y: -0.000021490761, z: 0.00047721225}
+--- !u!114 &502655699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 502655695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9941da3574c9404ba8540c33fd0dc44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _target: StanzaTelegrafo
+  _onInteraction: 1
+  _onButton: 0
+  _isStartMenu: 0
+  _startButton: {fileID: 0}
 --- !u!1 &509186879 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 062cb2c4b4d060942ba31dfe94fce7f7,
@@ -19552,7 +19629,7 @@ BoxCollider:
   m_GameObject: {fileID: 646335027}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 3.1432128, y: 2.613285, z: 3.996258}
   m_Center: {x: -1.1071831, y: 1.2990043, z: 0.025076035}
@@ -44313,7 +44390,7 @@ BoxCollider:
   m_GameObject: {fileID: 1564835048}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 3.1432128, y: 2.613285, z: 3.996258}
   m_Center: {x: -1.1071831, y: 1.2990043, z: 0.02507699}
@@ -49268,6 +49345,42 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1730654211}
   m_CullTransparentMesh: 0
+--- !u!1 &1731862109 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6281859578535519931, guid: be7e447331c65ff4eb643d1837c80375,
+    type: 3}
+  m_PrefabInstance: {fileID: 1775188859}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1731862112
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1731862109}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.004000001, y: 0.0059999996, z: 0.0010000009}
+  m_Center: {x: 0.0000000018423363, y: -0.000021490761, z: 0.0004772141}
+--- !u!114 &1731862113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1731862109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9941da3574c9404ba8540c33fd0dc44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _target: StanzaStampa
+  _onInteraction: 1
+  _onButton: 0
+  _isStartMenu: 0
+  _startButton: {fileID: 0}
 --- !u!1001 &1735644076
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -61538,6 +61651,42 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e60ed6511472f5418194846d101f2aa, type: 3}
+--- !u!1 &2133775117 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6281859578535519931, guid: be7e447331c65ff4eb643d1837c80375,
+    type: 3}
+  m_PrefabInstance: {fileID: 680130433}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &2133775120
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2133775117}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.004000001, y: 0.0059999996, z: 0.0010000009}
+  m_Center: {x: -0.000000001882954, y: -0.000021492624, z: 0.0004772141}
+--- !u!114 &2133775121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2133775117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9941da3574c9404ba8540c33fd0dc44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _target: StanzaPenicillina
+  _onInteraction: 1
+  _onButton: 0
+  _isStartMenu: 0
+  _startButton: {fileID: 0}
 --- !u!1001 &2138044726
 PrefabInstance:
   m_ObjectHideFlags: 0
