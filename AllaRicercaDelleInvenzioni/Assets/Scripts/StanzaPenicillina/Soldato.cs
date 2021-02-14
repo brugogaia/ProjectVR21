@@ -17,6 +17,7 @@ public class Soldato : MonoBehaviour
     private int index_s;
     private bool talking;
     public bool intrigger;
+    private bool endtalk;
     
 
     // Start is called before the first frame update
@@ -30,6 +31,7 @@ public class Soldato : MonoBehaviour
         intrigger = false;
         talk_box.SetActive(false);
         textDisplay.enabled = false;
+        endtalk = false;
     }
 
     // Update is called once per frame
@@ -47,7 +49,12 @@ public class Soldato : MonoBehaviour
             _animator.SetBool("cured", true);
 
             Talking();
-            _exit.SetActive(true);
+
+            if (endtalk)
+            {
+                _exit.SetActive(true);
+            }
+            
 
         }
         else
@@ -70,6 +77,8 @@ public class Soldato : MonoBehaviour
             {
                 StartCoroutine(Type());
                 talking = true;
+                endtalk = true;
+                
             }
         }
         if (!intrigger)

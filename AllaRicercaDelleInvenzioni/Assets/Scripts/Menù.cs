@@ -10,7 +10,7 @@ public class Menù : MonoBehaviour
    // public Image white;
     //public Animator anim;
     private GameObject[] menu;
-    private bool pausa;
+    public static bool pausa;
 
     void Start()
     {

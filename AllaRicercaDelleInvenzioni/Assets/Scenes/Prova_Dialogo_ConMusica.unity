@@ -898,7 +898,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 253098514041476143}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0e1476ea24e16b44b8b73add31378e34, type: 3}
   m_Name: 
@@ -976,6 +976,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.056895, y: 1.3212147, z: 2.5310419}
   m_Center: {x: -0.0078121424, y: 0.16060734, z: 0.23759139}
+--- !u!114 &253098514041476148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 253098514041476143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2762c48d929f8b74e817eb45e4e8e834, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textDisplay: {fileID: 0}
+  e: {fileID: 0}
+  talk_box: {fileID: 0}
+  sentences: []
+  entrato: 0
+  start: 0
 --- !u!1001 &6782216761827367541
 PrefabInstance:
   m_ObjectHideFlags: 0

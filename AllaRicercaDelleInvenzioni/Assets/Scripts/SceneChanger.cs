@@ -51,8 +51,12 @@ public class SceneChanger: MonoBehaviour
 
     private void TransferToScene()
     {
-        SceneManager.LoadScene(_target, LoadSceneMode.Single);
-        GameObject Player = GameObject.FindGameObjectWithTag("Player");
+        if (!Menù.pausa)
+        {
+            SceneManager.LoadScene(_target, LoadSceneMode.Single);
+            GameObject Player = GameObject.FindGameObjectWithTag("Player");
+        }
+        
     }
 }
 
