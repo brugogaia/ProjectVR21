@@ -59,7 +59,8 @@ public class Morse : MonoBehaviour
     public GameObject canva6;
     public GameObject canvaTre;
     public GameObject canvaFineGioco;
-
+    public GameObject canvaSpiegazione;
+    public GameObject canvaSpiegazione1;
 void Start()
     {
     	canva5.SetActive(false);
@@ -75,6 +76,8 @@ void Start()
         canvaTre.SetActive(false);
         canvaMinus.SetActive(false);
         canvaFineGioco.SetActive(false);
+        canvaSpiegazione1.SetActive(true);
+        canvaSpiegazione.SetActive(false);
 		_exit.SetActive(false);
         StartGioco=false;
         telegrafo=GameObject.FindGameObjectWithTag("Telegrafo");
@@ -121,6 +124,7 @@ void Update()
 						   						thirdNumber=false;
 						   						primaparte=false;
 						   						secondaparte=true;
+						   						canvaSpiegazione.SetActive(true);
 						   					}
 						   			}
 						     }
@@ -135,6 +139,7 @@ if(secondaparte){
 }
 	if(secondoCodiceOutput){
 		if(Gioco2(codice, codice2, canva2)){
+			canvaSpiegazione.SetActive(false);
 			canvaText.SetActive(true);
 			terzaparte=true;
 			secondaparte=false;
@@ -144,6 +149,7 @@ if(secondaparte){
 
 if(terzaparte){
 		if(Input.GetKeyDown(KeyCode.Return)){
+			canvaSpiegazione1.SetActive(false);
 			canvaText.SetActive(false);
 			canva5.SetActive(false);
     		canvaPlus.SetActive(false);
