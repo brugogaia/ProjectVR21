@@ -313,7 +313,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   libro_pressa: {fileID: 392977317}
   text: {fileID: 329097122}
-  _exit: {fileID: 0}
+  _exit: {fileID: 1017823846}
 --- !u!4 &31967206 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4753501244286384209, guid: e296d53cf58a683458c1e876bc89926f,
@@ -6537,6 +6537,8 @@ GameObject:
   - component: {fileID: 1017823849}
   - component: {fileID: 1017823848}
   - component: {fileID: 1017823847}
+  - component: {fileID: 1017823851}
+  - component: {fileID: 1017823852}
   m_Layer: 0
   m_Name: TriggerUscitaStanza
   m_TagString: Untagged
@@ -6618,6 +6620,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1017823851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017823846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 287651c68bf6dff4b9d60ee64ed0c8bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _stanza: 2
+--- !u!114 &1017823852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017823846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9941da3574c9404ba8540c33fd0dc44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _target: Biblioteca
+  _onInteraction: 0
+  _onButton: 0
+  _isStartMenu: 0
+  _startButton: {fileID: 0}
+  _autotrigger: 0
 --- !u!4 &1054870467 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2491117202891827978, guid: a6153fb157be5874f866dd7995a2c889,

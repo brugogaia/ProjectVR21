@@ -10,6 +10,7 @@ public class Morse : MonoBehaviour
 
 	private Animator _animator; 
 	private GameObject telegrafo;
+	[SerializeField] private GameObject _exit;
 
 	public bool StartGioco=false;
 
@@ -85,6 +86,7 @@ public class Morse : MonoBehaviour
         canvaTre.SetActive(false);
         canvaMinus.SetActive(false);
         canvaFineGioco.SetActive(false);
+		_exit.SetActive(false);
         StartGioco=false;
         telegrafo=GameObject.FindGameObjectWithTag("Telegrafo");
         _animator=telegrafo.GetComponent<Animator>(); 
@@ -425,6 +427,7 @@ if(secondaparte){
 				 					codice.Clear();
 				 					canvaText2.SetActive(false);
 				 					canvaFineGioco.SetActive(true);
+									_exit.SetActive(true);
 				 				
 				 				}else{
 				 					Debug.Log($"DIVERSI");
@@ -438,9 +441,12 @@ if(secondaparte){
 				 }
 	}
 
-}	// fine start gioco
+}   // fine start gioco
 
-
+		if (Input.GetKeyDown(KeyCode.L))
+		{
+			_exit.SetActive(true);
+		}
 
 
           			

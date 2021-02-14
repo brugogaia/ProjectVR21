@@ -13,6 +13,8 @@ public class PressAnimation : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         text.SetActive(false);
+        _exit.SetActive(false);
+
     }
 
     // Update is called once per frame
@@ -34,8 +36,8 @@ public class PressAnimation : MonoBehaviour
 
     IEnumerator Exit()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.8f);
         text.SetActive(true);
-        _exit.GetComponent<SceneChanger>().enabled = true;
+        _exit.SetActive(true);
     }
 }
