@@ -7,7 +7,8 @@ public class DialogueRobotStart : MonoBehaviour
 {
     public Text textDisplay;
     public Image e;
-    public GameObject talk_box;[TextArea(3, 10)]
+    public GameObject talk_box;
+    public GameObject quiz_image;
     private AudioSource source;
     private Animator anim;
     private bool stopmenu;
@@ -15,6 +16,7 @@ public class DialogueRobotStart : MonoBehaviour
     public bool entrato;
     public bool start;
     private int index;
+    public QuizAndRiddles quiz;
 
 
     // Start is called before the first frame update
@@ -27,10 +29,13 @@ public class DialogueRobotStart : MonoBehaviour
         textDisplay.enabled = false;
         entrato = false;
         start = true;
+        quiz_image.SetActive(false);
 
         Anim("start");
+        quiz.enabled = false;
 
         index = PlayerPrefs.GetInt("Frasi");
+        //index = 0;
     }
 
     // Update is called once per frame
@@ -42,12 +47,54 @@ public class DialogueRobotStart : MonoBehaviour
         {
             if (entrato)
             {
+                if (start)
+                {
+                    Anim("talk");
+                    StartCoroutine(Type());
+                    start = false;
+                }
 
+                if (textDisplay.text == sentences[index])
+                {
+                    Anim("stop");
+                    e.enabled = true;
+
+                    if (Input.GetKeyDown(KeyCode.E))
+                    {
+                        if (index <= sentences.Length - 1)
+                        {
+
+                            NextSentence();
+                        }
+                        else if (index == sentences.Length - 1)
+                        {
+                            index++;
+                            PlayerPrefs.SetInt("Frasi", index);
+                        }
+                    }
+                }
             }
         } else if (!stopmenu && index > sentences.Length - 1)
         {
             Anim("stop");
+            Debug.Log("fine sentences");
+            talk_box.SetActive(false);
+            textDisplay.text = "";
+            e.enabled = false;
+            textDisplay.enabled = false;
 
+            //finescript
+            quiz.enabled = true;
+            this.enabled = false;
+
+
+        } else
+        {
+            talk_box.SetActive(false);
+            textDisplay.text = "";
+            e.enabled = false;
+            textDisplay.enabled = false;
+            Anim("stop");
         }
         
     }
@@ -62,14 +109,16 @@ public class DialogueRobotStart : MonoBehaviour
         }
         else if(input== "talk")
         {
+            source.Play();
             anim.SetBool("wakeup", true);
             anim.SetBool("head", true);
             anim.SetBool("sleep", false);
         }
         else if (input == "stop")
         {
+            source.Stop();
             anim.SetBool("sleep", false);
-            anim.SetBool("head", true);
+            anim.SetBool("head", false);
             
         }
     }
@@ -82,6 +131,37 @@ public class DialogueRobotStart : MonoBehaviour
         else
         {
             stopmenu = false;
+        }
+    }
+
+    IEnumerator Type()
+    {
+        Anim("talk");
+        foreach (char letter in sentences[index].ToCharArray())
+        {
+            if (entrato)
+            {
+                textDisplay.text += letter;
+                yield return new WaitForSeconds(0.03f);
+            }
+
+        }
+    }
+
+    private void NextSentence()
+    {
+        index++;
+        PlayerPrefs.SetInt("Frasi", index);
+        e.enabled = false;
+        if (index <= sentences.Length - 1)
+        {
+            textDisplay.text = "";
+            StartCoroutine(Type());
+        }
+        else
+        {
+            textDisplay.text = "";
+            talk_box.SetActive(false);
         }
     }
 
@@ -109,8 +189,8 @@ public class DialogueRobotStart : MonoBehaviour
             talk_box.SetActive(false);
             textDisplay.text = "";
             textDisplay.enabled = false;
-            source.Stop();
-            
+            e.enabled = false;
+                        
             Anim("stop");
         }
     }
