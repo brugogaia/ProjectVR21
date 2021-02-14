@@ -46,12 +46,12 @@ public class GameSystem : MonoBehaviour
             else
             {
                 _time -= Time.deltaTime;
-                if (_time < 0.0f && nOfBacteria <= 2)
+                if (_time < 0.0f && nOfBacteria <= 10)
                 {
                     spawnBacteria();
                     _time = 2.0f;
                 }
-                else if (_time < 0.0f && nOfBacteria > 2)
+                else if (_time < 0.0f && nOfBacteria > 10)
                 {
                     spawnBoss();
                     _time = 1000f;
