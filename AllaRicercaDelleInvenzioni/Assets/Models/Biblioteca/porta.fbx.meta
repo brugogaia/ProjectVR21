@@ -13,7 +13,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: LEGNO
-    second: {fileID: 2100000, guid: b024838796c15874297a19fcc68c3e16, type: 2}
+    second: {fileID: 2100000, guid: d510a0542495ead4884a298302986242, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
