@@ -61,9 +61,9 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _GlossMapScale: 0.346
-    - _Glossiness: 0.568
+    - _Glossiness: 0.443
     - _GlossyReflections: 1
-    - _Metallic: 0.637
+    - _Metallic: 0.194
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02

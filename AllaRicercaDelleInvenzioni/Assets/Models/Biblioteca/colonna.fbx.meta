@@ -7,14 +7,14 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: LEGNO
-    second: {fileID: 7688115450179722122, guid: 5e907088d3aef9b42b350b9ac49c865b,
+      name: LIBRI
+    second: {fileID: -8911789998468641931, guid: 5e907088d3aef9b42b350b9ac49c865b,
       type: 3}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: LIBRI
-    second: {fileID: 2100000, guid: 76ecf134e0083eb42ba2705b786e2ac2, type: 2}
+      name: legno1
+    second: {fileID: 2100000, guid: dce3610552f9d49469c3b8a7185d5232, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
