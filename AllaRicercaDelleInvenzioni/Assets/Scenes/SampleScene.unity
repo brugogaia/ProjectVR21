@@ -387,6 +387,7 @@ GameObject:
   - component: {fileID: 1121573134}
   - component: {fileID: 1121573133}
   - component: {fileID: 1121573135}
+  - component: {fileID: 1121573136}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -513,9 +514,22 @@ MonoBehaviour:
   _target: Biblioteca
   _onInteraction: 0
   _onButton: 0
-  _isStartMenu: 1
+  _isStartMenu: 0
   _startButton: {fileID: 0}
   _autotrigger: 1
+--- !u!114 &1121573136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1121573128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 287651c68bf6dff4b9d60ee64ed0c8bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _stanza: 3
 --- !u!1 &1514961863
 GameObject:
   m_ObjectHideFlags: 0

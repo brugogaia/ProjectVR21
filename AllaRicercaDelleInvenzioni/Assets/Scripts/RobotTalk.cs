@@ -32,7 +32,7 @@ public class RobotTalk : MonoBehaviour {
         anim.SetBool("sleep", true);
 
         index_r = PlayerPrefs.GetInt("Progress");
-        index_s = 7;
+        index_s = PlayerPrefs.GetInt("Frasi");
 
     }
 
@@ -76,6 +76,7 @@ public class RobotTalk : MonoBehaviour {
                     else if (index_s == sentences.Length - 1)
                     {
                         index_s++;
+                        PlayerPrefs.SetInt("Frasi", index_s);
                     }
 
                 }
@@ -152,6 +153,7 @@ public class RobotTalk : MonoBehaviour {
     private void NextSentence()
     {
         index_s++;
+        PlayerPrefs.SetInt("Frasi", index_s);
         e.enabled = false;
         if (index_s <= sentences.Length - 1)
         {

@@ -12,8 +12,8 @@ public class ItsMyTurn : MonoBehaviour
         {
             gameObject.GetComponent<DisappearOnDrop>().enabled = true; 
             gameObject.GetComponent<Lumina>().enabled = true;
-            if (gameObject.GetComponent<Volumina>() != null)
-                gameObject.GetComponent<Volumina>().enabled = true;
+            if (gameObject.GetComponent<AudioSource>() != null)
+                gameObject.GetComponent<AudioSource>().enabled = true;
         }
     }
 

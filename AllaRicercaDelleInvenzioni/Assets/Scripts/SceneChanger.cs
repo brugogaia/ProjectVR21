@@ -18,7 +18,11 @@ public class SceneChanger: MonoBehaviour
     void Start()
     {
         if (_isStartMenu)
+        {
             PlayerPrefs.SetInt("Progress", 0);
+            PlayerPrefs.SetInt("Cura", 0);
+            PlayerPrefs.SetInt("Frasi", 0);
+        }
         if (_onButton)
         {
             _btn = _startButton.GetComponent<Button>();
