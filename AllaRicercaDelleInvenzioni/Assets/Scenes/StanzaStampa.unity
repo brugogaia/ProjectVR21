@@ -20,7 +20,7 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.6226415, g: 0.6226415, b: 0.6226415, a: 1}
+  m_AmbientSkyColor: {r: 0.8584906, g: 0.8584906, b: 0.8584906, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
@@ -313,6 +313,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   libro_pressa: {fileID: 392977317}
   text: {fileID: 329097122}
+  _exit: {fileID: 0}
 --- !u!4 &31967206 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4753501244286384209, guid: e296d53cf58a683458c1e876bc89926f,
