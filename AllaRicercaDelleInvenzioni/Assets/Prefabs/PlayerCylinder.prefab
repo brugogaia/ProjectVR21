@@ -113,7 +113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _cameraT: {fileID: 6606468618416754857}
   _speed: 3
-  _mouseSensitivity: 100
+  _mouseSensitivity: 200
 --- !u!143 &6606468617564257020
 CharacterController:
   m_ObjectHideFlags: 0
