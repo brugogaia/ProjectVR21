@@ -20,7 +20,10 @@ public class BokkDisplay : MonoBehaviour
         if (book_active)
         {
             for (int i = 0; i < PlayerPrefs.GetInt("Progress"); i++)
+            {
                 _gameBooks[i].SetActive(true);
+                _gameBooks[i].GetComponent<SceneChanger>().enabled = false;
+            }
             
             book_active = false;
         }

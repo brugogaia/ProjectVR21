@@ -49,7 +49,7 @@ public class Menù : MonoBehaviour
         {
             i.SetActive(false);
         }
-
+        pausa = false;
         SceneManager.LoadScene("Inizio", LoadSceneMode.Single);
 
         //StartCoroutine(Fading());
