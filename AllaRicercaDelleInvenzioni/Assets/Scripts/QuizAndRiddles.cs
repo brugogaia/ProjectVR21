@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class QuizAndRiddles : MonoBehaviour
 {
     [SerializeField] private GameObject[] quiz;
+    [SerializeField] private ItsMyTurn[] book_turn;
     private int index;
     public GameObject quiz_empty;
     public string[] sentences;
@@ -19,7 +20,6 @@ public class QuizAndRiddles : MonoBehaviour
     public bool entrato;
     private bool start_quiz;
     public bool right_answer;
-    public static bool endTalkTel;
     public GameObject endButton;
 
     // Start is called before the first frame update
@@ -28,6 +28,12 @@ public class QuizAndRiddles : MonoBehaviour
         source = GetComponent<AudioSource>();
         anim = GetComponent<Animator>();
         foreach (GameObject q in quiz) q.SetActive(false);
+        foreach (ItsMyTurn turn in book_turn)
+        {
+            turn.CompDisable();
+            turn.enabled = false;
+        }
+
         quiz_empty.SetActive(true);
         
         
@@ -41,7 +47,6 @@ public class QuizAndRiddles : MonoBehaviour
         entrato = false;
         right_answer = false;
         start_quiz = true;
-        endTalkTel = false;
         endButton.SetActive(false);
         
     }
@@ -191,10 +196,9 @@ public class QuizAndRiddles : MonoBehaviour
                     if (t == 4)
                     {
                         endButton.SetActive(true);
-                    }else if (t == 2)
-                    {
-                        endTalkTel = true;
                     }
+
+                    foreach (ItsMyTurn turn in book_turn) turn.enabled = true;
                 }
             }
         }

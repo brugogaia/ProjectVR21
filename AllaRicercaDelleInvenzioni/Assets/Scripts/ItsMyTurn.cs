@@ -5,21 +5,32 @@ using UnityEngine;
 public class ItsMyTurn : MonoBehaviour
 {
     [SerializeField] private int turn;
-    // Start is called before the first frame update
-    void Start()
-    {
-        if (turn == PlayerPrefs.GetInt("Progress"))
-        {
-            gameObject.GetComponent<DisappearOnDrop>().enabled = true; 
-            gameObject.GetComponent<Lumina>().enabled = true;
-            if (gameObject.GetComponent<AudioSource>() != null)
-                gameObject.GetComponent<AudioSource>().enabled = true;
-        }
-    }
-
+    
     // Update is called once per frame
     void Update()
     {
-        
+        if (turn == PlayerPrefs.GetInt("Progress"))
+        {
+            gameObject.GetComponent<DisappearOnDrop>().enabled = true;
+            gameObject.GetComponent<Lumina>().enabled = true;
+            if (gameObject.GetComponent<StartAudio>() != null)
+            {
+                gameObject.GetComponent<StartAudio>().enabled = true;
+                gameObject.GetComponent<AudioSource>().enabled = true;
+            }
+        }
+
     }
+
+    public void CompDisable()
+    {
+        gameObject.GetComponent<DisappearOnDrop>().enabled = false;
+        gameObject.GetComponent<Lumina>().enabled = false;
+        if (gameObject.GetComponent<StartAudio>() != null)
+        {
+            gameObject.GetComponent<StartAudio>().enabled = false;
+            gameObject.GetComponent<AudioSource>().enabled = false;
+        }
+    }
+
 }

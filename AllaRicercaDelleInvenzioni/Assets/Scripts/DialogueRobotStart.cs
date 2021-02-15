@@ -35,7 +35,7 @@ public class DialogueRobotStart : MonoBehaviour
         quiz.enabled = false;
 
         index = PlayerPrefs.GetInt("Frasi");
-        //index = 0;
+        
     }
 
     // Update is called once per frame
@@ -43,41 +43,65 @@ public class DialogueRobotStart : MonoBehaviour
     {
         OpenMenu();
 
-        if (!stopmenu && index <= sentences.Length-1)
-        {
-            if (entrato)
+        if (PlayerPrefs.GetInt("Progress") == 0) {
+
+            if (!stopmenu && index <= sentences.Length - 1)
             {
-                if (start)
+                if (entrato)
                 {
-                    Anim("talk");
-                    StartCoroutine(Type());
-                    start = false;
-                }
-
-                if (textDisplay.text == sentences[index])
-                {
-                    Anim("stop");
-                    e.enabled = true;
-
-                    if (Input.GetKeyDown(KeyCode.E))
+                    if (start)
                     {
-                        if (index <= sentences.Length - 1)
-                        {
+                        Anim("talk");
+                        StartCoroutine(Type());
+                        start = false;
+                    }
 
-                            NextSentence();
-                        }
-                        else if (index == sentences.Length - 1)
+                    if (textDisplay.text == sentences[index])
+                    {
+                        Anim("stop");
+                        e.enabled = true;
+
+                        if (Input.GetKeyDown(KeyCode.E))
                         {
-                            index++;
-                            PlayerPrefs.SetInt("Frasi", index);
+                            if (index < sentences.Length - 1)
+                            {
+                                NextSentence();
+                            }
+                            else if (index == sentences.Length - 1)
+                            {
+                                index++;
+                                PlayerPrefs.SetInt("Frasi", index);
+                            }
                         }
                     }
                 }
+            } else if (!stopmenu && (index > sentences.Length - 1))
+            {
+                Anim("stop");
+                Debug.Log("fine sentences");
+                talk_box.SetActive(false);
+                textDisplay.text = "";
+                e.enabled = false;
+                textDisplay.enabled = false;
+
+                //finescript
+                quiz.enabled = true;
+                this.enabled = false;
+
+
+            } else
+            {
+                talk_box.SetActive(false);
+                textDisplay.text = "";
+                e.enabled = false;
+                textDisplay.enabled = false;
+                Anim("stop");
             }
-        } else if (!stopmenu && index > sentences.Length - 1)
+        }
+        else
         {
             Anim("stop");
-            Debug.Log("fine sentences");
+            Debug.Log("uscita libro");
             talk_box.SetActive(false);
             textDisplay.text = "";
             e.enabled = false;
@@ -86,15 +110,6 @@ public class DialogueRobotStart : MonoBehaviour
             //finescript
             quiz.enabled = true;
             this.enabled = false;
-
-
-        } else
-        {
-            talk_box.SetActive(false);
-            textDisplay.text = "";
-            e.enabled = false;
-            textDisplay.enabled = false;
-            Anim("stop");
         }
         
     }

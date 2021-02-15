@@ -12528,7 +12528,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c4fb21bca0311774bbb4d8843b396c0a, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.106
   m_Pitch: 1
   Loop: 1
@@ -12637,6 +12637,18 @@ MonoBehaviour:
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8bba9f8f71d324043994c00f9b6357d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &402654585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 402654578}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 886da9aaca3063a42b555c79f830b4ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &406297536
@@ -57307,6 +57319,11 @@ MonoBehaviour:
   - {fileID: 532137745}
   - {fileID: 239083992}
   - {fileID: 448568471}
+  book_turn:
+  - {fileID: 1851393832}
+  - {fileID: 1998377188}
+  - {fileID: 402654581}
+  - {fileID: 421614063}
   quiz_empty: {fileID: 1140538832}
   sentences:
   - "Il primo libro che dovrai trovare, \xE8 molto vecchio ti posso giurare! La copertina
