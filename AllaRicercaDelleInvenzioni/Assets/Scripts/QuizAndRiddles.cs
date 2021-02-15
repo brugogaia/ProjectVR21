@@ -49,14 +49,13 @@ public class QuizAndRiddles : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ((index == 0)||(index == 4))
+        if (index == 0)
         {
             OpenMenu();
             StartTalking(index);
             
-
             
-        }else if (index <= 3)
+        }else if (index <= 4)
         {
             if (start_quiz)
             {
@@ -69,11 +68,6 @@ public class QuizAndRiddles : MonoBehaviour
             {
                 OpenMenu();
                 StartTalking(index);
-
-                if (index == 2)
-                {
-                    endTalkTel = true;
-                }
             }
         }
        
@@ -194,9 +188,12 @@ public class QuizAndRiddles : MonoBehaviour
                 if (textDisplay.text == sentences[t])
                 {
                     Anim("stop");
-                    if (index == 4)
+                    if (t == 4)
                     {
                         endButton.SetActive(true);
+                    }else if (t == 2)
+                    {
+                        endTalkTel = true;
                     }
                 }
             }
