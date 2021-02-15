@@ -50,9 +50,21 @@ public class Menù : MonoBehaviour
             i.SetActive(false);
         }
         pausa = false;
+        
         SceneManager.LoadScene("Inizio", LoadSceneMode.Single);
 
         //StartCoroutine(Fading());
+    }
+
+    public void EndGame()
+    {
+        foreach (GameObject i in menu)
+        {
+            i.SetActive(false);
+        }
+        pausa = false;
+
+        SceneManager.LoadScene("Fine", LoadSceneMode.Single);
     }
 
     /*IEnumerator Fading()

@@ -53,6 +53,7 @@ public class SceneChanger: MonoBehaviour
     {
         if (!Menù.pausa)
         {
+            EasyFPC.stop = false;
             SceneManager.LoadScene(_target, LoadSceneMode.Single);
             GameObject Player = GameObject.FindGameObjectWithTag("Player");
         }
