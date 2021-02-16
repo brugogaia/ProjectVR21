@@ -9,6 +9,9 @@ public class DisappearOnDrop : Grabbable
     private Vector3 _origin;
     [SerializeField] GameObject _objectiveObj;
     [SerializeField] GameObject _activableObj;
+
+    private bool _bookGrab;
+
     // Start is called before the first frame update
     protected override void Start()
     {
@@ -16,12 +19,14 @@ public class DisappearOnDrop : Grabbable
         _collider = GetComponent<Collider>();
         _rigidbody = GetComponent<Rigidbody>();
         _origin = transform.position;
+        _bookGrab = false;
     }
 
     public override void Grab(GameObject grabber)
     {
         _collider.enabled = false;
         _rigidbody.isKinematic = true;
+        _bookGrab = true;
     }
 
     public override void Drop()
@@ -36,5 +41,16 @@ public class DisappearOnDrop : Grabbable
                 _activableObj.SetActive(true);
             }
         }
+        else
+        {
+            _bookGrab = false;
+        }
+        
     }
+
+    public bool bookGrabTrue()
+    {
+        return _bookGrab;
+    }
+    
 }

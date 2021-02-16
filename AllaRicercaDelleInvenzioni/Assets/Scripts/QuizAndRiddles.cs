@@ -7,6 +7,7 @@ public class QuizAndRiddles : MonoBehaviour
 {
     [SerializeField] private GameObject[] quiz;
     [SerializeField] private ItsMyTurn[] book_turn;
+    [SerializeField] private DisappearOnDrop[] book_grab;
     private int index;
     public GameObject quiz_empty;
     public string[] sentences;
@@ -57,22 +58,28 @@ public class QuizAndRiddles : MonoBehaviour
         if (index == 0)
         {
             OpenMenu();
-            StartTalking(index);
-            
-            
-        }else if (index <= 4)
+
+            if (!book_grab[index].bookGrabTrue())
+                StartTalking(index);
+
+
+        }
+        else if (index <= 4)
         {
             if (start_quiz)
             {
                 quiz[index - 1].SetActive(true);
                 EasyFPC.stop = true;
+                EasyFPC._soundOn = true;
             }
             
             
             if (right_answer)
             {
                 OpenMenu();
-                StartTalking(index);
+                
+                if (!book_grab[index].bookGrabTrue())
+                    StartTalking(index);
             }
         }
        
@@ -123,7 +130,8 @@ public class QuizAndRiddles : MonoBehaviour
             start_quiz = false;
             quiz[index - 1].SetActive(false);
             EasyFPC.stop = false;
-            
+            EasyFPC._soundOn = false;
+
 
         }
         else
@@ -160,6 +168,13 @@ public class QuizAndRiddles : MonoBehaviour
             entrato = true;
             talk_box.SetActive(true);
             textDisplay.enabled = true;
+        }
+
+        if (book_grab[index].bookGrabTrue())
+        {
+            entrato = false;
+            talk_box.SetActive(false);
+            textDisplay.enabled = false;
         }
     }
 

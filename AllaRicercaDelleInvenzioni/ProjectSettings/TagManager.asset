@@ -18,6 +18,7 @@ TagManager:
   - Take
   - AppearDrop
   - Checkpoint
+  - Book
   layers:
   - Default
   - TransparentFX

@@ -13,6 +13,7 @@ public class Soldato : MonoBehaviour
 
     public Text textDisplay;
     public GameObject talk_box;
+    private AudioSource source;
     public string[] sentences;
     private int index_s;
     private bool talking;
@@ -26,6 +27,8 @@ public class Soldato : MonoBehaviour
         _animator = GetComponent<Animator>();
         _before = GameObject.FindGameObjectWithTag("Before");
         _after = GameObject.FindGameObjectWithTag("After");
+        source = GetComponent<AudioSource>();
+
         _cured = false;
         talking = false;
         intrigger = false;
@@ -78,7 +81,13 @@ public class Soldato : MonoBehaviour
                 StartCoroutine(Type());
                 talking = true;
                 endtalk = true;
+                source.Play();
                 
+            }
+
+            if (textDisplay.text == sentences[index_s])
+            {
+                source.Stop();
             }
         }
         if (!intrigger)
@@ -87,6 +96,7 @@ public class Soldato : MonoBehaviour
             talk_box.SetActive(false);
             textDisplay.enabled = false;
             talking = false;
+            source.Stop();
         }
         
     }

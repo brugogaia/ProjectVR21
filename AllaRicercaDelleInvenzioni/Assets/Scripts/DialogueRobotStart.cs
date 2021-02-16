@@ -45,6 +45,10 @@ public class DialogueRobotStart : MonoBehaviour
 
         if (PlayerPrefs.GetInt("Progress") == 0) {
 
+            if (Input.GetKeyDown(KeyCode.K)){
+                index = sentences.Length + 1;
+            }
+
             if (!stopmenu && index <= sentences.Length - 1)
             {
                 if (entrato)

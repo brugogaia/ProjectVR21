@@ -11,7 +11,7 @@ public class EasyFPC : MonoBehaviour
     private CharacterController _characterController;
     private AudioSource _footSound;
     private float _position;
-    private bool _soundOn;
+    public static bool _soundOn;
     private float cameraXRotation = 0f;
 
     public static int Stanza = 0;
