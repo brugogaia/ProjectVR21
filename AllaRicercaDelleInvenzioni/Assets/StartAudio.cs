@@ -6,7 +6,7 @@ public class StartAudio : MonoBehaviour
 {
     private GameObject Player;
     private AudioSource bip;
-    private float MaxDist = 7f;
+    private float MaxDist = 10f;
     private bool playstart;
     private float d;
 
@@ -40,10 +40,11 @@ public class StartAudio : MonoBehaviour
                if (d > Distance) {
                     d = Distance;
                     bip.volume += 1 * (MaxDist - Distance) / 1000;
+                    if (bip.volume > 0.7f) bip.volume = 0.7f;
                }else if (d < Distance)
                 {
                     d = Distance;
-                    bip.volume -= 1 * (MaxDist - Distance) / 1000;
+                    bip.volume -= 1 * (MaxDist - Distance) / 100;
                }else if (d == 0)
                 {
                     d = Distance;
