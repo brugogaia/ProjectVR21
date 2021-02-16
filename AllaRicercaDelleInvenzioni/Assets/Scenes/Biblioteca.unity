@@ -56207,7 +56207,7 @@ Light:
   m_BounceIntensity: 4
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 4.1e-43, y: 7.67e-43, z: 0, w: 3.548322e-25}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 4.3e-44}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -58591,6 +58591,12 @@ MonoBehaviour:
   - {fileID: 1998377188}
   - {fileID: 402654581}
   - {fileID: 421614063}
+  book_grab:
+  - {fileID: 1851393826}
+  - {fileID: 1998377190}
+  - {fileID: 402654583}
+  - {fileID: 421614062}
+  - {fileID: 421614062}
   quiz_empty: {fileID: 1140538832}
   sentences:
   - "Il primo libro che dovrai trovare, \xE8 molto vecchio ti posso giurare! La copertina
