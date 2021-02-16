@@ -58409,6 +58409,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2762c48d929f8b74e817eb45e4e8e834, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  book_turn: {fileID: 1851393832}
   textDisplay: {fileID: 46194977}
   e: {fileID: 1325238442}
   talk_box: {fileID: 1699283732}

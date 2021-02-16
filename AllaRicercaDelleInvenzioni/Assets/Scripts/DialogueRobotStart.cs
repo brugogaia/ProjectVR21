@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class DialogueRobotStart : MonoBehaviour
 {
+    [SerializeField] private ItsMyTurn book_turn;
     public Text textDisplay;
     public Image e;
     public GameObject talk_box;
@@ -30,6 +31,7 @@ public class DialogueRobotStart : MonoBehaviour
         entrato = false;
         start = true;
         quiz_image.SetActive(false);
+        book_turn.enabled = false;
 
         Anim("start");
         quiz.enabled = false;
