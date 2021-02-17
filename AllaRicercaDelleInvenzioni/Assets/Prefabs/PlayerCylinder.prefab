@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _fpsCameraT: {fileID: 6606468618416754857}
-  _raycastDistance: 5
+  _raycastDistance: 1.5
   _focus: {fileID: 6606468619470297604}
   _raycasted: {fileID: 0}
 --- !u!82 &8675431805870177704
