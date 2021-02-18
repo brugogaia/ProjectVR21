@@ -12,12 +12,17 @@ public class SceneChanger: MonoBehaviour
     [SerializeField] private Button _startButton;
     [SerializeField] private bool _autotrigger;
     [SerializeField] private bool _continue;
-    private Button _btn;
+    [SerializeField] private Image _fade;
     private GameObject _player;
+    private Animator _fadeAnim; 
+    private Button _btn;
+
 
     // Start is called before the first frame update
     void Start()
     {
+        _fadeAnim = _fade.GetComponent<Animator>();
+
         if (_isStartMenu)
         {
             PlayerPrefs.SetInt("Progress", 0);
@@ -27,17 +32,17 @@ public class SceneChanger: MonoBehaviour
         if (_onButton)
         {
             _btn = _startButton.GetComponent<Button>();
-            _btn.onClick.AddListener(TransferToScene);
+            _btn.onClick.AddListener(Fade);
         }
         if (_autotrigger)
-            TransferToScene();
+            Fade();
 
     }
 
     private void OnTriggerEnter(Collider player)
     {
         if (player.tag == "Player")
-            TransferToScene();
+            Fade();
     }
     
 
@@ -46,7 +51,7 @@ public class SceneChanger: MonoBehaviour
     {
         _player = GameObject.FindGameObjectWithTag("Player");
         if (_onInteraction && Input.GetMouseButtonDown(0) && _player.GetComponent<RayCast>()._raycasted.Equals(gameObject))
-            TransferToScene();
+            Fade();
 
     }
 
@@ -82,6 +87,16 @@ public class SceneChanger: MonoBehaviour
         else
             SceneManager.LoadScene("Biblioteca", LoadSceneMode.Single);
 
+    }
+
+    private void Fade() {
+        StartCoroutine(Fading());
+    }
+
+    IEnumerator Fading() {
+        _fadeAnim.SetBool("Fade", true);
+        yield return new WaitUntil( () => _fade.color.a == 1);
+        TransferToScene();
     }
 }
 
