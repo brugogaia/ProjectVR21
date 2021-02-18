@@ -1145,6 +1145,7 @@ MonoBehaviour:
   _isStartMenu: 1
   _startButton: {fileID: 1786710564}
   _autotrigger: 0
+  _continue: 0
 --- !u!1 &1806965893
 GameObject:
   m_ObjectHideFlags: 0

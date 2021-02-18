@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.09103242, g: 0.07923872, b: 0.16578913, a: 1}
+  m_IndirectSpecularColor: {r: 0.091033794, g: 0.07924994, b: 0.16579503, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -12779,6 +12779,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _objectiveObj: {fileID: 1564835048}
   _activableObj: {fileID: 502655695}
+  _autoDropOnRange: 1
 --- !u!114 &402654584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13246,6 +13247,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _objectiveObj: {fileID: 90679279}
   _activableObj: {fileID: 2133775117}
+  _autoDropOnRange: 1
 --- !u!114 &421614063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56355,6 +56357,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _objectiveObj: {fileID: 446533060}
   _activableObj: {fileID: 335946503}
+  _autoDropOnRange: 1
 --- !u!114 &1851393827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61999,6 +62002,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _objectiveObj: {fileID: 646335027}
   _activableObj: {fileID: 1731862109}
+  _autoDropOnRange: 1
 --- !u!54 &1998377191
 Rigidbody:
   m_ObjectHideFlags: 0

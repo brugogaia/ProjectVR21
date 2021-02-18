@@ -19,4 +19,8 @@ public abstract class Grabbable : MonoBehaviour
 
     public abstract void Grab(GameObject grabber);
     public abstract void Drop();
+
+    public abstract bool OnRange();
+
+    public abstract bool getAutoDrop();
 }

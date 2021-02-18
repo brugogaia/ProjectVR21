@@ -7,8 +7,10 @@ public class DisappearOnDrop : Grabbable
     private Rigidbody _rigidbody;
     private Collider _collider;
     private Vector3 _origin;
-    [SerializeField] GameObject _objectiveObj;
-    [SerializeField] GameObject _activableObj;
+    [SerializeField] private GameObject _objectiveObj;
+    [SerializeField] private GameObject _activableObj;
+  //  [SerializeField] private bool _returnToOrigin;
+    [SerializeField] private bool _autoDropOnRange;
 
     private bool _bookGrab;
 
@@ -21,6 +23,7 @@ public class DisappearOnDrop : Grabbable
         _origin = transform.position;
         _bookGrab = false;
     }
+
 
     public override void Grab(GameObject grabber)
     {
@@ -48,9 +51,22 @@ public class DisappearOnDrop : Grabbable
         
     }
 
+    public override bool getAutoDrop()
+    {
+        return _autoDropOnRange;
+    }
+
+    public override bool OnRange()
+    {
+        if (_objectiveObj != null)
+            return Vector3.Distance(_objectiveObj.transform.position, transform.position) < 0.6f;
+        return false;
+    }
+
     public bool bookGrabTrue()
     {
         return _bookGrab;
     }
+
     
 }

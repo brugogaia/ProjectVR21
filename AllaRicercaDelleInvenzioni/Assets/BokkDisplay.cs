@@ -10,8 +10,6 @@ public class BokkDisplay : MonoBehaviour
     void Start()
     {
         book_active = true;
-        
-        
     }
 
     // Update is called once per frame
@@ -24,10 +22,7 @@ public class BokkDisplay : MonoBehaviour
                 _gameBooks[i].SetActive(true);
                 _gameBooks[i].GetComponent<SceneChanger>().enabled = false;
             }
-            
             book_active = false;
-        }
-        
-            
+        } 
     }
 }

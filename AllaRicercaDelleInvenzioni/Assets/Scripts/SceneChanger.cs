@@ -11,6 +11,7 @@ public class SceneChanger: MonoBehaviour
     [SerializeField] private bool _isStartMenu;
     [SerializeField] private Button _startButton;
     [SerializeField] private bool _autotrigger;
+    [SerializeField] private bool _continue;
     private Button _btn;
     private GameObject _player;
 
@@ -53,11 +54,34 @@ public class SceneChanger: MonoBehaviour
     {
         if (!Menù.pausa)
         {
-            EasyFPC.stop = false;
-            SceneManager.LoadScene(_target, LoadSceneMode.Single);
-            GameObject Player = GameObject.FindGameObjectWithTag("Player");
+            if (_continue)
+                Continue();
+            else
+            {
+                if (_target == "Biblioteca")
+                    PlayerPrefs.SetInt("Biblioteca", 1);
+                else
+                    PlayerPrefs.SetInt("Biblioteca", 0);
+                EasyFPC.stop = false;
+                SceneManager.LoadScene(_target, LoadSceneMode.Single);
+            }
+
+            //GameObject Player = GameObject.FindGameObjectWithTag("Player");
         }
         
+    }
+
+    private void Continue() {
+        if (EasyFPC.stop)
+            EasyFPC.stop = false;
+        Debug.Log(SceneUtility.GetScenePathByBuildIndex(PlayerPrefs.GetInt("Progress") + 1));
+        Debug.Log(PlayerPrefs.GetInt("Progress"));
+        Debug.Log(PlayerPrefs.GetInt("Biblioteca"));
+        if (PlayerPrefs.GetInt("Biblioteca") == 0)
+            SceneManager.LoadScene(SceneUtility.GetScenePathByBuildIndex(PlayerPrefs.GetInt("Progress") + 1), LoadSceneMode.Single);
+        else
+            SceneManager.LoadScene("Biblioteca", LoadSceneMode.Single);
+
     }
 }
 

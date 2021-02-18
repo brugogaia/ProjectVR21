@@ -6,7 +6,8 @@ public class SimpleGrabbable : Grabbable
 {
     private Rigidbody _rigidbody;
     private Collider _collider;
-
+    [SerializeField] private bool _autoDropOnRange;
+    [SerializeField] private GameObject _objectiveObj;
     public bool _isGrabbed;
 
     // Start is called before the first frame update
@@ -30,5 +31,17 @@ public class SimpleGrabbable : Grabbable
         _collider.enabled = true;
         _rigidbody.isKinematic = false;
         _isGrabbed = false;
+    }
+
+    public override bool getAutoDrop()
+    {
+        return _autoDropOnRange;
+    }
+
+    public override bool OnRange()
+    {
+        if (_objectiveObj!=null)
+            return Vector3.Distance(_objectiveObj.transform.position, transform.position) < 0.6f;
+        return false;
     }
 }

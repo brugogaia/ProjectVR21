@@ -16,8 +16,4 @@ public class CPNTSystem : MonoBehaviour
             Player.transform.position = Checkpoints[_progress - 1].transform.position;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-    }
 }

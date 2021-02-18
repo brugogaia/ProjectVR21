@@ -67,33 +67,34 @@ public class Bussola : MonoBehaviour
         _compassIsGrabbed = _compass.GetComponent<SimpleGrabbable>()._isGrabbed;
 
         _ray = _player.GetComponent<RayCast>();
-
-        switch (_ray._raycasted.name)
+        if (_ray._raycasted != null)
         {
-            case "ciotola":
-                _bowlIsRayCasted = true;
-                break;
-            case "ago":
-                _needleIsRayCasted = true;
-                break;
-            case "magnete":
-                _magnetIsRayCasted = true;
-                break;
-            case "sughero":
-                _corkIsRayCasted = true;
-                break;
-            case "bussola":
-                _compassIsRayCasted = true;
-                break;
-            default:
-                _needleIsRayCasted = false; 
-                _magnetIsRayCasted = false; 
-                _corkIsRayCasted = false; 
-                _bowlIsRayCasted = false;
-                _compassIsRayCasted = false;
-                break;
+            switch (_ray._raycasted.name)
+            {
+                case "ciotola":
+                    _bowlIsRayCasted = true;
+                    break;
+                case "ago":
+                    _needleIsRayCasted = true;
+                    break;
+                case "magnete":
+                    _magnetIsRayCasted = true;
+                    break;
+                case "sughero":
+                    _corkIsRayCasted = true;
+                    break;
+                case "bussola":
+                    _compassIsRayCasted = true;
+                    break;
+                default:
+                    _needleIsRayCasted = false;
+                    _magnetIsRayCasted = false;
+                    _corkIsRayCasted = false;
+                    _bowlIsRayCasted = false;
+                    _compassIsRayCasted = false;
+                    break;
+            }
         }
-
         if (_carafeIsGrabbed && _bowlIsRayCasted && !_carafeIsUsed)
         {
             _canvaSpill.SetActive(true);
