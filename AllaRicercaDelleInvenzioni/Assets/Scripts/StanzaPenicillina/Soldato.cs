@@ -19,6 +19,7 @@ public class Soldato : MonoBehaviour
     private bool talking;
     public bool intrigger;
     private bool endtalk;
+    private bool _play;
     
 
     // Start is called before the first frame update
@@ -42,7 +43,7 @@ public class Soldato : MonoBehaviour
     {
         if (PlayerPrefs.GetInt("Cura") == 1)
             _cured = true;
-        // MANCA DA SETTARE _CURED TRUE QUANDO FINISCE IL GIOCHINO
+        
         if (_cured)
         {
             _before.SetActive(false);
@@ -66,6 +67,13 @@ public class Soldato : MonoBehaviour
             _after.SetActive(false);
             if (_animator == null) return;
             _animator.SetBool("cured", false);
+
+            if (!_play)
+            {
+                source.Play();
+                _play = true;
+            }
+            
         }
     }
 
