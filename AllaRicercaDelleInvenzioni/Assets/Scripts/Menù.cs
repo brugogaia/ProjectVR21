@@ -36,7 +36,7 @@ public class Menù : MonoBehaviour
     {
         EasyFPC.stop = false;
         pausa = false;
-
+        menu = GameObject.FindGameObjectsWithTag("Menu");
         foreach (GameObject i in menu)
         {
             i.SetActive(false);
