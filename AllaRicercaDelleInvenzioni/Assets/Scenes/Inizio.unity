@@ -1157,6 +1157,7 @@ GameObject:
   - component: {fileID: 1754904101}
   - component: {fileID: 1754904100}
   - component: {fileID: 1754904099}
+  - component: {fileID: 1754904098}
   m_Layer: 5
   m_Name: Button_Continua
   m_TagString: Untagged
@@ -1183,6 +1184,26 @@ RectTransform:
   m_AnchoredPosition: {x: 351.7, y: 256.6}
   m_SizeDelta: {x: 61.046257, y: 17.321184}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1754904098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754904096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9941da3574c9404ba8540c33fd0dc44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _target: 
+  _onInteraction: 0
+  _onButton: 1
+  _isStartMenu: 0
+  _startButton: {fileID: 1754904099}
+  _autotrigger: 0
+  _continue: 1
+  _fade: {fileID: 1331781271}
 --- !u!114 &1754904099
 MonoBehaviour:
   m_ObjectHideFlags: 0

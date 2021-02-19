@@ -21,7 +21,8 @@ public class SceneChanger: MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _fadeAnim = _fade.GetComponent<Animator>();
+
+        
 
         if (_isStartMenu)
         {
@@ -31,8 +32,11 @@ public class SceneChanger: MonoBehaviour
         }
         if (_onButton)
         {
-            _btn = _startButton.GetComponent<Button>();
-            _btn.onClick.AddListener(Fade);
+            if (_startButton != null)
+            {
+                _btn = _startButton.GetComponent<Button>();
+                _btn.onClick.AddListener(Fade);
+            }
         }
         if (_autotrigger)
             Fade();
@@ -90,7 +94,13 @@ public class SceneChanger: MonoBehaviour
     }
 
     private void Fade() {
-        StartCoroutine(Fading());
+        if (_fade != null)
+        {
+            _fadeAnim = _fade.GetComponent<Animator>();
+            StartCoroutine(Fading());
+        }
+        else
+            TransferToScene();
     }
 
     IEnumerator Fading() {
