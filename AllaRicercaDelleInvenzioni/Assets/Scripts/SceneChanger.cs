@@ -32,8 +32,11 @@ public class SceneChanger: MonoBehaviour
         }
         if (_onButton)
         {
-            _btn = _startButton.GetComponent<Button>();
-            _btn.onClick.AddListener(Fade);
+            if (_startButton != null)
+            {
+                _btn = _startButton.GetComponent<Button>();
+                _btn.onClick.AddListener(Fade);
+            }
         }
         if (_autotrigger)
             Fade();
