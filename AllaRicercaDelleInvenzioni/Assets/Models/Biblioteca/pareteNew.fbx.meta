@@ -1,0 +1,1307 @@
+fileFormatVersion: 2
+guid: d7785e510109e5b4bad9a3e4c6795cb0
+ModelImporter:
+  serializedVersion: 19301
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Legno
+    second: {fileID: 2100000, guid: b024838796c15874297a19fcc68c3e16, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Libri
+    second: {fileID: 2100000, guid: 76ecf134e0083eb42ba2705b786e2ac2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino
+    second: {fileID: 2100000, guid: 57b212126b458b6419bf4ff0da511751, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.001
+    second: {fileID: 2100000, guid: c2adda5845a4eb74ca8b8777bb0c0d76, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.002
+    second: {fileID: 2100000, guid: bc96ba73d93d6de4f99907e9c5cf5593, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.003
+    second: {fileID: 2100000, guid: 46d8eb4d0b85c5140961776b3ca3cad2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.004
+    second: {fileID: 2100000, guid: 170dc25a7819d1f44810e6a920a8154f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.005
+    second: {fileID: 2100000, guid: 3da34dc0e007e4240a7ccc7b801781dc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.006
+    second: {fileID: 2100000, guid: 57b212126b458b6419bf4ff0da511751, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.007
+    second: {fileID: 2100000, guid: c2adda5845a4eb74ca8b8777bb0c0d76, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.008
+    second: {fileID: 2100000, guid: 46d8eb4d0b85c5140961776b3ca3cad2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.009
+    second: {fileID: 2100000, guid: 3da34dc0e007e4240a7ccc7b801781dc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.010
+    second: {fileID: 2100000, guid: 57b212126b458b6419bf4ff0da511751, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.011
+    second: {fileID: 2100000, guid: c2adda5845a4eb74ca8b8777bb0c0d76, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.012
+    second: {fileID: 2100000, guid: 3da34dc0e007e4240a7ccc7b801781dc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.013
+    second: {fileID: 2100000, guid: 46d8eb4d0b85c5140961776b3ca3cad2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.014
+    second: {fileID: 2100000, guid: c2adda5845a4eb74ca8b8777bb0c0d76, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.015
+    second: {fileID: 2100000, guid: 170dc25a7819d1f44810e6a920a8154f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.016
+    second: {fileID: 2100000, guid: 57b212126b458b6419bf4ff0da511751, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.017
+    second: {fileID: 2100000, guid: c2adda5845a4eb74ca8b8777bb0c0d76, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.018
+    second: {fileID: 2100000, guid: 3da34dc0e007e4240a7ccc7b801781dc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.019
+    second: {fileID: 2100000, guid: 46d8eb4d0b85c5140961776b3ca3cad2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.020
+    second: {fileID: 2100000, guid: bc96ba73d93d6de4f99907e9c5cf5593, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.021
+    second: {fileID: 2100000, guid: 57b212126b458b6419bf4ff0da511751, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.022
+    second: {fileID: 2100000, guid: bc96ba73d93d6de4f99907e9c5cf5593, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.023
+    second: {fileID: 2100000, guid: c2adda5845a4eb74ca8b8777bb0c0d76, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.024
+    second: {fileID: 2100000, guid: 3da34dc0e007e4240a7ccc7b801781dc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.025
+    second: {fileID: 2100000, guid: 46d8eb4d0b85c5140961776b3ca3cad2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.026
+    second: {fileID: 2100000, guid: c2adda5845a4eb74ca8b8777bb0c0d76, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.027
+    second: {fileID: 2100000, guid: 57b212126b458b6419bf4ff0da511751, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.028
+    second: {fileID: 2100000, guid: 170dc25a7819d1f44810e6a920a8154f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.029
+    second: {fileID: 2100000, guid: 46d8eb4d0b85c5140961776b3ca3cad2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.030
+    second: {fileID: 2100000, guid: 3da34dc0e007e4240a7ccc7b801781dc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.031
+    second: {fileID: 2100000, guid: 46d8eb4d0b85c5140961776b3ca3cad2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.032
+    second: {fileID: 2100000, guid: 57b212126b458b6419bf4ff0da511751, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.033
+    second: {fileID: 2100000, guid: 170dc25a7819d1f44810e6a920a8154f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.034
+    second: {fileID: 2100000, guid: bc96ba73d93d6de4f99907e9c5cf5593, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.035
+    second: {fileID: 2100000, guid: c2adda5845a4eb74ca8b8777bb0c0d76, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.036
+    second: {fileID: 2100000, guid: 170dc25a7819d1f44810e6a920a8154f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.037
+    second: {fileID: 2100000, guid: 57b212126b458b6419bf4ff0da511751, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.038
+    second: {fileID: 2100000, guid: 46d8eb4d0b85c5140961776b3ca3cad2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.039
+    second: {fileID: 2100000, guid: 3da34dc0e007e4240a7ccc7b801781dc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.040
+    second: {fileID: 2100000, guid: c2adda5845a4eb74ca8b8777bb0c0d76, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.041
+    second: {fileID: 2100000, guid: 57b212126b458b6419bf4ff0da511751, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.042
+    second: {fileID: 2100000, guid: 57b212126b458b6419bf4ff0da511751, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.043
+    second: {fileID: 2100000, guid: 3da34dc0e007e4240a7ccc7b801781dc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.044
+    second: {fileID: 2100000, guid: 46d8eb4d0b85c5140961776b3ca3cad2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.045
+    second: {fileID: 2100000, guid: c2adda5845a4eb74ca8b8777bb0c0d76, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.046
+    second: {fileID: 2100000, guid: 57b212126b458b6419bf4ff0da511751, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.047
+    second: {fileID: 2100000, guid: c2adda5845a4eb74ca8b8777bb0c0d76, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.048
+    second: {fileID: 2100000, guid: 170dc25a7819d1f44810e6a920a8154f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.049
+    second: {fileID: 2100000, guid: 57b212126b458b6419bf4ff0da511751, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.050
+    second: {fileID: 2100000, guid: 46d8eb4d0b85c5140961776b3ca3cad2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.051
+    second: {fileID: 2100000, guid: c2adda5845a4eb74ca8b8777bb0c0d76, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.052
+    second: {fileID: 2100000, guid: bc96ba73d93d6de4f99907e9c5cf5593, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.053
+    second: {fileID: 2100000, guid: c2adda5845a4eb74ca8b8777bb0c0d76, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.054
+    second: {fileID: 2100000, guid: 57b212126b458b6419bf4ff0da511751, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.055
+    second: {fileID: 2100000, guid: 3da34dc0e007e4240a7ccc7b801781dc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.056
+    second: {fileID: 2100000, guid: bc96ba73d93d6de4f99907e9c5cf5593, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.057
+    second: {fileID: 2100000, guid: 46d8eb4d0b85c5140961776b3ca3cad2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.058
+    second: {fileID: 2100000, guid: bc96ba73d93d6de4f99907e9c5cf5593, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.059
+    second: {fileID: 2100000, guid: 170dc25a7819d1f44810e6a920a8154f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.060
+    second: {fileID: 2100000, guid: 170dc25a7819d1f44810e6a920a8154f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.061
+    second: {fileID: 2100000, guid: 57b212126b458b6419bf4ff0da511751, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.062
+    second: {fileID: 2100000, guid: c2adda5845a4eb74ca8b8777bb0c0d76, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.063
+    second: {fileID: 2100000, guid: c2adda5845a4eb74ca8b8777bb0c0d76, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.064
+    second: {fileID: 2100000, guid: bc96ba73d93d6de4f99907e9c5cf5593, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.065
+    second: {fileID: 2100000, guid: 46d8eb4d0b85c5140961776b3ca3cad2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.066
+    second: {fileID: 2100000, guid: 170dc25a7819d1f44810e6a920a8154f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.067
+    second: {fileID: 2100000, guid: 57b212126b458b6419bf4ff0da511751, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.068
+    second: {fileID: 2100000, guid: 46d8eb4d0b85c5140961776b3ca3cad2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.069
+    second: {fileID: 2100000, guid: c2adda5845a4eb74ca8b8777bb0c0d76, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.070
+    second: {fileID: 2100000, guid: bc96ba73d93d6de4f99907e9c5cf5593, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.071
+    second: {fileID: 2100000, guid: 3da34dc0e007e4240a7ccc7b801781dc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.072
+    second: {fileID: 2100000, guid: 170dc25a7819d1f44810e6a920a8154f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.073
+    second: {fileID: 2100000, guid: 3da34dc0e007e4240a7ccc7b801781dc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.074
+    second: {fileID: 2100000, guid: 46d8eb4d0b85c5140961776b3ca3cad2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.075
+    second: {fileID: 2100000, guid: 57b212126b458b6419bf4ff0da511751, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.076
+    second: {fileID: 2100000, guid: 46d8eb4d0b85c5140961776b3ca3cad2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.077
+    second: {fileID: 2100000, guid: c2adda5845a4eb74ca8b8777bb0c0d76, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.078
+    second: {fileID: 2100000, guid: 3da34dc0e007e4240a7ccc7b801781dc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bordino.079
+    second: {fileID: 2100000, guid: 46d8eb4d0b85c5140961776b3ca3cad2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.001
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.002
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.003
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.004
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.005
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.006
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.007
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.008
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.009
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.010
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.011
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.012
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.013
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.014
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.015
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.016
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.017
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.018
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.019
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.020
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.021
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.022
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.023
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.024
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.025
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.026
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.027
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.028
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.029
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.030
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.031
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.032
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.033
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.034
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.035
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.036
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.037
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.038
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.039
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.040
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.041
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.042
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.043
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.044
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.045
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.046
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.047
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.048
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.049
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.050
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.051
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.052
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.053
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.054
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.055
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.056
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.057
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.058
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.059
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.060
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.061
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.062
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.063
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.064
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.065
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.066
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.067
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.068
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.069
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.070
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.071
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.072
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.073
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.074
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.075
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.076
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.077
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.078
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carta.079
+    second: {fileID: 2100000, guid: b0e7ac43dec91484287257f2a3c78394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina
+    second: {fileID: 2100000, guid: 8b6aa324cab5d9d40948ac8d11a195c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.001
+    second: {fileID: 2100000, guid: ac9ad0af368a92f4090e618ed45db00f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.002
+    second: {fileID: 2100000, guid: 113c6105f213c314b8222e1b77c115d4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.003
+    second: {fileID: 2100000, guid: bc946a073bf18cd488eb161513734794, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.004
+    second: {fileID: 2100000, guid: 176c017c124232c4aa7d4fc477e9c228, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.005
+    second: {fileID: 2100000, guid: ba49e7fda340cdc41af60a053638bd5a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.006
+    second: {fileID: 2100000, guid: 8b6aa324cab5d9d40948ac8d11a195c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.007
+    second: {fileID: 2100000, guid: ac9ad0af368a92f4090e618ed45db00f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.008
+    second: {fileID: 2100000, guid: bc946a073bf18cd488eb161513734794, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.009
+    second: {fileID: 2100000, guid: ba49e7fda340cdc41af60a053638bd5a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.010
+    second: {fileID: 2100000, guid: 8b6aa324cab5d9d40948ac8d11a195c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.011
+    second: {fileID: 2100000, guid: ac9ad0af368a92f4090e618ed45db00f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.012
+    second: {fileID: 2100000, guid: ba49e7fda340cdc41af60a053638bd5a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.013
+    second: {fileID: 2100000, guid: bc946a073bf18cd488eb161513734794, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.014
+    second: {fileID: 2100000, guid: ac9ad0af368a92f4090e618ed45db00f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.015
+    second: {fileID: 2100000, guid: 176c017c124232c4aa7d4fc477e9c228, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.016
+    second: {fileID: 2100000, guid: 8b6aa324cab5d9d40948ac8d11a195c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.017
+    second: {fileID: 2100000, guid: ac9ad0af368a92f4090e618ed45db00f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.018
+    second: {fileID: 2100000, guid: ba49e7fda340cdc41af60a053638bd5a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.019
+    second: {fileID: 2100000, guid: bc946a073bf18cd488eb161513734794, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.020
+    second: {fileID: 2100000, guid: 113c6105f213c314b8222e1b77c115d4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.021
+    second: {fileID: 2100000, guid: 8b6aa324cab5d9d40948ac8d11a195c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.022
+    second: {fileID: 2100000, guid: 113c6105f213c314b8222e1b77c115d4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.023
+    second: {fileID: 2100000, guid: ac9ad0af368a92f4090e618ed45db00f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.024
+    second: {fileID: 2100000, guid: ba49e7fda340cdc41af60a053638bd5a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.025
+    second: {fileID: 2100000, guid: bc946a073bf18cd488eb161513734794, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.026
+    second: {fileID: 2100000, guid: ac9ad0af368a92f4090e618ed45db00f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.027
+    second: {fileID: 2100000, guid: 8b6aa324cab5d9d40948ac8d11a195c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.028
+    second: {fileID: 2100000, guid: 176c017c124232c4aa7d4fc477e9c228, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.029
+    second: {fileID: 2100000, guid: bc946a073bf18cd488eb161513734794, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.030
+    second: {fileID: 2100000, guid: ba49e7fda340cdc41af60a053638bd5a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.031
+    second: {fileID: 2100000, guid: bc946a073bf18cd488eb161513734794, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.032
+    second: {fileID: 2100000, guid: 8b6aa324cab5d9d40948ac8d11a195c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.033
+    second: {fileID: 2100000, guid: 176c017c124232c4aa7d4fc477e9c228, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.034
+    second: {fileID: 2100000, guid: 113c6105f213c314b8222e1b77c115d4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.035
+    second: {fileID: 2100000, guid: ac9ad0af368a92f4090e618ed45db00f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.036
+    second: {fileID: 2100000, guid: 176c017c124232c4aa7d4fc477e9c228, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.037
+    second: {fileID: 2100000, guid: 8b6aa324cab5d9d40948ac8d11a195c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.038
+    second: {fileID: 2100000, guid: bc946a073bf18cd488eb161513734794, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.039
+    second: {fileID: 2100000, guid: ba49e7fda340cdc41af60a053638bd5a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.040
+    second: {fileID: 2100000, guid: ac9ad0af368a92f4090e618ed45db00f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.041
+    second: {fileID: 2100000, guid: 8b6aa324cab5d9d40948ac8d11a195c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.042
+    second: {fileID: 2100000, guid: 8b6aa324cab5d9d40948ac8d11a195c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.043
+    second: {fileID: 2100000, guid: ba49e7fda340cdc41af60a053638bd5a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.044
+    second: {fileID: 2100000, guid: bc946a073bf18cd488eb161513734794, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.045
+    second: {fileID: 2100000, guid: ac9ad0af368a92f4090e618ed45db00f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.046
+    second: {fileID: 2100000, guid: 8b6aa324cab5d9d40948ac8d11a195c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.047
+    second: {fileID: 2100000, guid: ac9ad0af368a92f4090e618ed45db00f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.048
+    second: {fileID: 2100000, guid: 176c017c124232c4aa7d4fc477e9c228, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.049
+    second: {fileID: 2100000, guid: 8b6aa324cab5d9d40948ac8d11a195c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.050
+    second: {fileID: 2100000, guid: bc946a073bf18cd488eb161513734794, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.051
+    second: {fileID: 2100000, guid: ac9ad0af368a92f4090e618ed45db00f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.052
+    second: {fileID: 2100000, guid: 113c6105f213c314b8222e1b77c115d4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.053
+    second: {fileID: 2100000, guid: ac9ad0af368a92f4090e618ed45db00f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.054
+    second: {fileID: 2100000, guid: 8b6aa324cab5d9d40948ac8d11a195c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.055
+    second: {fileID: 2100000, guid: ba49e7fda340cdc41af60a053638bd5a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.056
+    second: {fileID: 2100000, guid: 113c6105f213c314b8222e1b77c115d4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.057
+    second: {fileID: 2100000, guid: bc946a073bf18cd488eb161513734794, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.058
+    second: {fileID: 2100000, guid: 113c6105f213c314b8222e1b77c115d4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.059
+    second: {fileID: 2100000, guid: 176c017c124232c4aa7d4fc477e9c228, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.060
+    second: {fileID: 2100000, guid: 176c017c124232c4aa7d4fc477e9c228, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.061
+    second: {fileID: 2100000, guid: 8b6aa324cab5d9d40948ac8d11a195c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.062
+    second: {fileID: 2100000, guid: ac9ad0af368a92f4090e618ed45db00f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.063
+    second: {fileID: 2100000, guid: ac9ad0af368a92f4090e618ed45db00f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.064
+    second: {fileID: 2100000, guid: 113c6105f213c314b8222e1b77c115d4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.065
+    second: {fileID: 2100000, guid: bc946a073bf18cd488eb161513734794, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.066
+    second: {fileID: 2100000, guid: 176c017c124232c4aa7d4fc477e9c228, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.067
+    second: {fileID: 2100000, guid: 8b6aa324cab5d9d40948ac8d11a195c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.068
+    second: {fileID: 2100000, guid: bc946a073bf18cd488eb161513734794, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.069
+    second: {fileID: 2100000, guid: ac9ad0af368a92f4090e618ed45db00f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.070
+    second: {fileID: 2100000, guid: 113c6105f213c314b8222e1b77c115d4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.071
+    second: {fileID: 2100000, guid: ba49e7fda340cdc41af60a053638bd5a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.072
+    second: {fileID: 2100000, guid: 176c017c124232c4aa7d4fc477e9c228, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.073
+    second: {fileID: 2100000, guid: ba49e7fda340cdc41af60a053638bd5a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.074
+    second: {fileID: 2100000, guid: bc946a073bf18cd488eb161513734794, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.075
+    second: {fileID: 2100000, guid: 8b6aa324cab5d9d40948ac8d11a195c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.076
+    second: {fileID: 2100000, guid: bc946a073bf18cd488eb161513734794, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.077
+    second: {fileID: 2100000, guid: ac9ad0af368a92f4090e618ed45db00f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.078
+    second: {fileID: 2100000, guid: ba49e7fda340cdc41af60a053638bd5a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: copertina.079
+    second: {fileID: 2100000, guid: bc946a073bf18cd488eb161513734794, type: 2}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
