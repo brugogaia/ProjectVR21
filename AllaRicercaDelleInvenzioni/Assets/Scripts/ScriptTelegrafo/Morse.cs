@@ -23,8 +23,8 @@ public class Morse : MonoBehaviour
     private bool quartaparte=false;
     private bool quintaparte=false;
     private bool primaparte=false;
-    private List<KeyCode> tastiera = new List<KeyCode>{ KeyCode.Alpha0, KeyCode.Alpha1, KeyCode.Alpha2, KeyCode.Alpha3, KeyCode.Alpha4, KeyCode.Alpha5, KeyCode.Alpha6, KeyCode.Alpha7, KeyCode.Alpha8, KeyCode.Alpha9, KeyCode.KeypadPlus, KeyCode.KeypadMinus, KeyCode.Minus, KeyCode.Plus, KeyCode.Keypad1,KeyCode.Keypad2,KeyCode.Keypad3,KeyCode.Keypad4,KeyCode.Keypad5,KeyCode.Keypad6,KeyCode.Keypad7,KeyCode.Keypad8,KeyCode.Keypad9,KeyCode.Keypad0 };
-    private List<KeyCode> risposta=new List<KeyCode>{KeyCode.Alpha5, KeyCode.Plus, KeyCode.Alpha7};
+    private List<KeyCode> tastiera = new List<KeyCode>{ KeyCode.Alpha0, KeyCode.Alpha1, KeyCode.Alpha2, KeyCode.Alpha3, KeyCode.Alpha4, KeyCode.Alpha5, KeyCode.Alpha6, KeyCode.Alpha7, KeyCode.Alpha8, KeyCode.Alpha9, KeyCode.KeypadPlus, KeyCode.KeypadMinus, KeyCode.Minus, KeyCode.Equals, KeyCode.Keypad1,KeyCode.Keypad2,KeyCode.Keypad3,KeyCode.Keypad4,KeyCode.Keypad5,KeyCode.Keypad6,KeyCode.Keypad7,KeyCode.Keypad8,KeyCode.Keypad9,KeyCode.Keypad0 };
+    private List<KeyCode> risposta=new List<KeyCode>{KeyCode.Alpha5, KeyCode.Equals, KeyCode.Alpha7};
     private List<KeyCode> rispostaPad=new List<KeyCode>{KeyCode.Keypad5,KeyCode.KeypadPlus, KeyCode.Keypad7};
     private List<KeyCode> risposta2=new List<KeyCode>{KeyCode.Alpha9, KeyCode.Minus, KeyCode.Alpha3};
     private List<KeyCode> rispostaPad2=new List<KeyCode>{KeyCode.Keypad9, KeyCode.KeypadMinus, KeyCode.Keypad3};
