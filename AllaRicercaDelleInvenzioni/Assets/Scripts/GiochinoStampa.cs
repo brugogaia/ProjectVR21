@@ -16,7 +16,9 @@ public class GiochinoStampa : MonoBehaviour
     public GameObject canva2;
     public GameObject errore;
     public bool fineGioco;
-    
+    //[SerializeField] public AudioSource[] audioYesorNot;
+    private AudioSource audioYesorNot;
+
     //RigidbodyFirstPersonController scriptFP = null;
 
     // Start is called before the first frame update
@@ -33,17 +35,16 @@ public class GiochinoStampa : MonoBehaviour
         GameObject g2 = GameObject.Find("G2"); g2.SetActive(false); gutenberg[5] = g2;
         canva2.SetActive(false);
         errore.SetActive(false);
-        //GameObject tempObj = GameObject.Find("RigidBodyFPSController");
-        //scriptFP = tempObj.GetComponent<RigidbodyFirstPersonController>();
         fineGioco = false;
         EasyFPC.stop = true;
+        audioYesorNot = GetComponent<AudioSource>();
+        //for (int a = 0; a < audioYesorNot.Length; a++) audioYesorNot[a] = GetComponent<AudioSource>();
 
     }
 
     // Update is called once per frame
     void Update()
     {
-
         if (!string.IsNullOrEmpty(parola))
         {
             errore.SetActive(false);
@@ -52,6 +53,7 @@ public class GiochinoStampa : MonoBehaviour
             {
                 if (parola.ToLower() == lista[i])
                 {
+                    audioYesorNot.Play();
                     Debug.Log("TROVATA " + parola);
                     trovate_parole++;
 
@@ -66,7 +68,6 @@ public class GiochinoStampa : MonoBehaviour
             if(tempo<0f)
             {
                 Debug.Log("ERRORE");
-
                 this.ClearText();
                 errore.SetActive(true);
                 tempo = 3f;

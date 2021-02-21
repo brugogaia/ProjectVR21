@@ -11,17 +11,14 @@ public class GiochinoStampaTextAppearAndGo : MonoBehaviour
     public GameObject canva1;
     public GameObject canva2;
     public GameObject text1;
-   
-
-
-
+  
     // Start is called before the first frame update
     void Start()
     {
         canva1.SetActive(false);
         canva2.SetActive(false);
         text1.SetActive(false);
-       
+        
     }
 
     // Update is called once per frame
