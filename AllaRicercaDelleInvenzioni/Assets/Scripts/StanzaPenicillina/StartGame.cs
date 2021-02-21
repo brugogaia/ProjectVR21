@@ -33,11 +33,14 @@ public class StartGame : MonoBehaviour
         {
             //Debug.Log("Enter game trigger");
             _text.SetActive(true);
+            _soldato.GetComponent<SceneChanger>().enabled = true;
 
             if (Input.GetMouseButtonDown(0))
             {
                 _text.SetActive(false);
                 UnityStandardAssets.Characters.FirstPerson.RigidbodyFirstPersonController._activeMovement = false;
+                
+
                 // MANCA CODICE PER CAMBIARE SCENA
             }
         } 
@@ -45,6 +48,7 @@ public class StartGame : MonoBehaviour
         {
             //Debug.Log("Exit game trigger");
             _text.SetActive(false);
+            _soldato.GetComponent<SceneChanger>().enabled = false;
         }
 
         if (_enter)
@@ -65,7 +69,7 @@ public class StartGame : MonoBehaviour
         if (player.gameObject.tag == "Player")
         {
             _enter = true;
-            _soldato.GetComponent<SceneChanger>().enabled = true;
+            
         }
     }
 
@@ -74,7 +78,7 @@ public class StartGame : MonoBehaviour
         if (player.gameObject.tag == "Player")
         {
             _enter = false;
-            _soldato.GetComponent<SceneChanger>().enabled = false;
+            
         }
     }
 }
