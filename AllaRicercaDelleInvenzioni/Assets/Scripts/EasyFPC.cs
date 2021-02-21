@@ -63,7 +63,11 @@ public class EasyFPC : MonoBehaviour
             {
                 PlayFootStepAudio(false);
             }
-            
+
+        }
+        else
+        {
+            PlayFootStepAudio(false);
         }        
     }
 
