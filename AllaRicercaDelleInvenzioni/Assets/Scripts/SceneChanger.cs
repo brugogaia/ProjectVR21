@@ -29,6 +29,7 @@ public class SceneChanger: MonoBehaviour
             PlayerPrefs.SetInt("Progress", 0);
             PlayerPrefs.SetInt("Cura", 0);
             PlayerPrefs.SetInt("Frasi", 0);
+            PlayerPrefs.SetInt("Biblioteca", 1);
         }
         if (_onButton)
         {
@@ -61,11 +62,11 @@ public class SceneChanger: MonoBehaviour
 
     private void TransferToScene()
     {
+        if (_continue)
+            Continue();
         if (!Menù.pausa)
         {
-            if (_continue)
-                Continue();
-            else
+            
             {
                 if (_target == "Biblioteca")
                     PlayerPrefs.SetInt("Biblioteca", 1);
@@ -87,7 +88,7 @@ public class SceneChanger: MonoBehaviour
         Debug.Log(PlayerPrefs.GetInt("Progress"));
         Debug.Log(PlayerPrefs.GetInt("Biblioteca"));
         if (PlayerPrefs.GetInt("Biblioteca") == 0)
-            SceneManager.LoadScene(SceneUtility.GetScenePathByBuildIndex(PlayerPrefs.GetInt("Progress") + 1), LoadSceneMode.Single);
+            SceneManager.LoadScene(SceneUtility.GetScenePathByBuildIndex(PlayerPrefs.GetInt("Progress")+1), LoadSceneMode.Single);
         else
             SceneManager.LoadScene("Biblioteca", LoadSceneMode.Single);
 

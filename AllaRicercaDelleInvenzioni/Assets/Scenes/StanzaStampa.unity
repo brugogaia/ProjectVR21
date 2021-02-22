@@ -13529,6 +13529,7 @@ GameObject:
   - component: {fileID: 1984993473}
   - component: {fileID: 1984993472}
   - component: {fileID: 1984993471}
+  - component: {fileID: 1984993474}
   m_Layer: 5
   m_Name: Button_RicominciaLiv
   m_TagString: Untagged
@@ -13635,6 +13636,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1984993469}
   m_CullTransparentMesh: 0
+--- !u!114 &1984993474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1984993469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9941da3574c9404ba8540c33fd0dc44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _target: 
+  _onInteraction: 0
+  _onButton: 1
+  _isStartMenu: 0
+  _startButton: {fileID: 1984993471}
+  _autotrigger: 0
+  _continue: 1
+  _fade: {fileID: 684669078}
 --- !u!1001 &1991523817
 PrefabInstance:
   m_ObjectHideFlags: 0

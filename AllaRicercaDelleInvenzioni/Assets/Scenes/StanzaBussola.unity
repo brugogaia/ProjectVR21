@@ -18739,7 +18739,6 @@ GameObject:
   - component: {fileID: 1070808174}
   - component: {fileID: 1070808173}
   - component: {fileID: 1070808172}
-  - component: {fileID: 1070808171}
   - component: {fileID: 1070808170}
   m_Layer: 0
   m_Name: parete fondo 2
@@ -18768,19 +18767,6 @@ MonoBehaviour:
   _autotrigger: 0
   _continue: 0
   _fade: {fileID: 323284205}
---- !u!114 &1070808171
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1070808169}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 287651c68bf6dff4b9d60ee64ed0c8bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _stanza: 1
 --- !u!65 &1070808172
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20746,6 +20732,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1195159489}
   - component: {fileID: 1195159490}
+  - component: {fileID: 1195159492}
+  - component: {fileID: 1195159491}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -20775,11 +20763,36 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1195159488}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10, y: 2.7713387e-12, z: 10.000004}
+  m_Size: {x: 10, y: 2, z: 10.000004}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1195159491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195159488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb82e98e945a05a409fc757fba5cfa1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1195159492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195159488}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 287651c68bf6dff4b9d60ee64ed0c8bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _stanza: 0
 --- !u!1 &1205582993
 GameObject:
   m_ObjectHideFlags: 0
@@ -22088,6 +22101,7 @@ GameObject:
   - component: {fileID: 1278947853}
   - component: {fileID: 1278947852}
   - component: {fileID: 1278947851}
+  - component: {fileID: 1278947854}
   m_Layer: 5
   m_Name: Button_RicominciaLiv
   m_TagString: Untagged
@@ -22194,6 +22208,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1278947849}
   m_CullTransparentMesh: 0
+--- !u!114 &1278947854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278947849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9941da3574c9404ba8540c33fd0dc44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _target: 
+  _onInteraction: 0
+  _onButton: 1
+  _isStartMenu: 0
+  _startButton: {fileID: 1278947851}
+  _autotrigger: 0
+  _continue: 1
+  _fade: {fileID: 323284205}
 --- !u!4 &1283500153 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2505907358504812747, guid: 07e7bc82966cbef4e899b89b539da437,
