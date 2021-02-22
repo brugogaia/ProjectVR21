@@ -42,7 +42,12 @@ public class DisappearOnDrop : Grabbable
             gameObject.SetActive(false);
             if (_activableObj != null) {
                 _activableObj.SetActive(true);
-                _activableObj.GetComponent<AudioSource>().Play();
+
+                if (_activableObj.GetComponent<AudioSource>())
+                {
+                    _activableObj.GetComponent<AudioSource>().Play();
+                }
+                
             }
         }
         else
