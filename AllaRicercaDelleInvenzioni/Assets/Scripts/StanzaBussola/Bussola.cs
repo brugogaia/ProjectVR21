@@ -8,7 +8,6 @@ public class Bussola : MonoBehaviour
     [SerializeField] GameObject _canvaMagnetize;
     [SerializeField] GameObject _canvaStick;
     [SerializeField] GameObject _canvaInsert;
-    [SerializeField] GameObject _canvaTake;
 
     [SerializeField] GameObject _player;
     private RayCast _ray;
@@ -37,12 +36,10 @@ public class Bussola : MonoBehaviour
     private bool _magnetIsGrabbed = false;
     private bool _corkIsGrabbed = false;
     private bool _corkPostStickIsGrabbed = false;
-    private bool _compassIsGrabbed = false;
     private bool _needleIsRayCasted = false;
     private bool _magnetIsRayCasted = false;
     private bool _corkIsRayCasted = false;
     private bool _bowlIsRayCasted = false;
-    private bool _compassIsRayCasted = false;
     private bool _carafeIsUsed = false;
     private bool _needleIsMagnetized = false;
     private bool _magnetIsUsed = false;
@@ -60,7 +57,6 @@ public class Bussola : MonoBehaviour
         _canvaMagnetize.SetActive(false);
         _canvaStick.SetActive(false);
         _canvaInsert.SetActive(false);
-        _canvaTake.SetActive(false);
         _maze.SetActive(false);
 
         _originCarafe = _carafe.transform.position;
@@ -76,7 +72,6 @@ public class Bussola : MonoBehaviour
         _magnetIsGrabbed = _magnet.GetComponent<SimpleGrabbable>()._isGrabbed;
         _corkIsGrabbed = _cork.GetComponent<SimpleGrabbable>()._isGrabbed;
         _corkPostStickIsGrabbed = _postCork.GetComponent<SimpleGrabbable>()._isGrabbed;
-        _compassIsGrabbed = _compass.GetComponent<SimpleGrabbable>()._isGrabbed;
 
         _ray = _player.GetComponent<RayCast>();
         if (_ray._raycasted != null)
@@ -95,15 +90,11 @@ public class Bussola : MonoBehaviour
                 case "sughero":
                     _corkIsRayCasted = true;
                     break;
-                case "bussola":
-                    _compassIsRayCasted = true;
-                    break;
                 default:
                     _needleIsRayCasted = false;
                     _magnetIsRayCasted = false;
                     _corkIsRayCasted = false;
                     _bowlIsRayCasted = false;
-                    _compassIsRayCasted = false;
                     break;
             }
         }
@@ -201,19 +192,6 @@ public class Bussola : MonoBehaviour
             _compass.SetActive(true);
             _notCompass.SetActive(false);
             _maze.SetActive(true);
-            if (_compassIsRayCasted)
-            {
-                _canvaTake.SetActive(true);
-                if (_compassIsGrabbed)
-                {
-                    _canvaTake.SetActive(false);
-                }
-            }
-            else
-            {
-                _canvaTake.SetActive(true);
-            }
-
         }
     }
 }
