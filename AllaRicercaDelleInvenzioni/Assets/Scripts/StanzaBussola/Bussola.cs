@@ -8,6 +8,7 @@ public class Bussola : MonoBehaviour
     [SerializeField] GameObject _canvaMagnetize;
     [SerializeField] GameObject _canvaStick;
     [SerializeField] GameObject _canvaInsert;
+    [SerializeField] GameObject _canvaTake;
 
     [SerializeField] GameObject _player;
     private RayCast _ray;
@@ -22,6 +23,8 @@ public class Bussola : MonoBehaviour
     [SerializeField] GameObject _notCompass;
     [SerializeField] GameObject _preStick;
     [SerializeField] GameObject _postStick;
+    [SerializeField] GameObject _newCork;
+    [SerializeField] GameObject _newNeedle;
     [SerializeField] GameObject _postCork;
     [SerializeField] GameObject _postCork_audio;
     [SerializeField] GameObject _postCorkWater_audio;
@@ -57,6 +60,7 @@ public class Bussola : MonoBehaviour
         _canvaMagnetize.SetActive(false);
         _canvaStick.SetActive(false);
         _canvaInsert.SetActive(false);
+        _canvaTake.SetActive(false);
         _maze.SetActive(false);
 
         _originCarafe = _carafe.transform.position;
@@ -111,7 +115,8 @@ public class Bussola : MonoBehaviour
 
                 _carafe.GetComponent<SimpleGrabbable>().Drop();
                 _player.GetComponent<RayCast>().Drop();
-                _carafe.transform.position = _originCarafe;
+                _carafe.GetComponent<Animation>().Play();
+                //_carafe.transform.position = _originCarafe;
             }
         }
         else
@@ -131,11 +136,13 @@ public class Bussola : MonoBehaviour
                 _magnetIsUsed = true;
 
                 _magnet.GetComponent<SimpleGrabbable>().Drop();
-                _magnet.transform.position = _originMagnet;
+                //_magnet.transform.position = _originMagnet;
                 _needle.GetComponent<SimpleGrabbable>().Drop();
-                _needle.transform.position = _originNeedle;
+                //_needle.transform.position = _originNeedle;
                 _player.GetComponent<RayCast>().Drop();
-                
+                _magnet.GetComponent<Animation>().Play();
+                _needle.GetComponent<Animation>().Play();
+
             }
         }
         else
@@ -158,6 +165,9 @@ public class Bussola : MonoBehaviour
 
                 _preStick.SetActive(false);
                 _postStick.SetActive(true);
+                _newCork.GetComponent<Animation>().Play();
+                _newNeedle.GetComponent<Animation>().Play();
+                //_newNeedle.transform.parent = _newCork.transform;
                 _needleIsSticked = true;
                 _corkIsUsed = true;
             }
@@ -165,6 +175,11 @@ public class Bussola : MonoBehaviour
         else
         {
             _canvaStick.SetActive(false);
+        }
+
+        if (_newCork.GetComponent<SimpleGrabbable>()._isGrabbed)
+        {
+            _newNeedle.transform.parent = _newCork.transform;
         }
 
         if ((_corkPostStickIsGrabbed && _bowlIsRayCasted && _carafeIsUsed))
