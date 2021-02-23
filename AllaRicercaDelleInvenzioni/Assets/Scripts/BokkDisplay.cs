@@ -5,11 +5,13 @@ using UnityEngine;
 public class BokkDisplay : MonoBehaviour
 {
     [SerializeField] private GameObject[] _gameBooks;
+    [SerializeField] private GameObject _textOpenBook;
     private bool book_active;
     // Start is called before the first frame update
     void Start()
     {
         book_active = true;
+        _textOpenBook.SetActive(false);
     }
 
     // Update is called once per frame

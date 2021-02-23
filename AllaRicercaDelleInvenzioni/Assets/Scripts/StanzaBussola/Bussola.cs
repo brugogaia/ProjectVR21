@@ -24,6 +24,9 @@ public class Bussola : MonoBehaviour
     [SerializeField] GameObject _preStick;
     [SerializeField] GameObject _postStick;
     [SerializeField] GameObject _postCork;
+    [SerializeField] GameObject _postCork_audio;
+    [SerializeField] GameObject _postCorkWater_audio;
+    [SerializeField] GameObject _maze;
 
     private Vector3 _originCarafe;
     private Vector3 _originMagnet;
@@ -58,6 +61,7 @@ public class Bussola : MonoBehaviour
         _canvaStick.SetActive(false);
         _canvaInsert.SetActive(false);
         _canvaTake.SetActive(false);
+        _maze.SetActive(false);
 
         _originCarafe = _carafe.transform.position;
         _originMagnet = _magnet.transform.position;
@@ -109,6 +113,7 @@ public class Bussola : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 Debug.Log("Water is poured out");
+                _carafe.GetComponent<AudioSource>().Play();
                 _canvaSpill.SetActive(false);
                 _carafeIsUsed = true;
                 _fluid.SetActive(true);
@@ -129,6 +134,7 @@ public class Bussola : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 Debug.Log("Needle is magnetized");
+                _magnet.GetComponent<AudioSource>().Play();
                 _canvaMagnetize.SetActive(false);
                 _needleIsMagnetized = true;
                 _magnetIsUsed = true;
@@ -152,6 +158,7 @@ public class Bussola : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 Debug.Log("Needle is sticked");
+                _postCork_audio.GetComponent<AudioSource>().Play();
                 _canvaStick.SetActive(false);
 
                 _needle.GetComponent<SimpleGrabbable>().Drop();
@@ -169,12 +176,13 @@ public class Bussola : MonoBehaviour
             _canvaStick.SetActive(false);
         }
 
-        if (_corkPostStickIsGrabbed && _bowlIsRayCasted && _carafeIsUsed)
+        if ((_corkPostStickIsGrabbed && _bowlIsRayCasted && _carafeIsUsed))
         {
             _canvaInsert.SetActive(true);
             if (Input.GetMouseButtonDown(0))
             {
                 Debug.Log("Compass is ready");
+                _postCorkWater_audio.GetComponent<AudioSource>().Play();
                 _canvaInsert.SetActive(false);
                 _compassIsReady = true;
 
@@ -188,10 +196,11 @@ public class Bussola : MonoBehaviour
             _canvaInsert.SetActive(false);
         }
 
-        if (_compassIsReady)
+        if ((_compassIsReady)|| (Input.GetKeyDown(KeyCode.I)))
         {
             _compass.SetActive(true);
             _notCompass.SetActive(false);
+            _maze.SetActive(true);
             if (_compassIsRayCasted)
             {
                 _canvaTake.SetActive(true);
