@@ -69,7 +69,7 @@ public class RayCast : MonoBehaviour
 
     }
 
-    private void Drop() {
+    public void Drop() {
         GrabbedObj.Drop();
         GrabbedObj.transform.parent = GrabbedObj.OriginalParent;
         Grabbing = false;

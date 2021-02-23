@@ -25,6 +25,10 @@ public class Bussola : MonoBehaviour
     [SerializeField] GameObject _postStick;
     [SerializeField] GameObject _postCork;
 
+    private Vector3 _originCarafe;
+    private Vector3 _originMagnet;
+    private Vector3 _originNeedle;
+
     private bool _carafeIsGrabbed = false;
     private bool _needleIsGrabbed = false;
     private bool _magnetIsGrabbed = false;
@@ -54,6 +58,10 @@ public class Bussola : MonoBehaviour
         _canvaStick.SetActive(false);
         _canvaInsert.SetActive(false);
         _canvaTake.SetActive(false);
+
+        _originCarafe = _carafe.transform.position;
+        _originMagnet = _magnet.transform.position;
+        _originNeedle = _needle.transform.position;
     }
 
     // Update is called once per frame
@@ -104,6 +112,10 @@ public class Bussola : MonoBehaviour
                 _canvaSpill.SetActive(false);
                 _carafeIsUsed = true;
                 _fluid.SetActive(true);
+
+                _carafe.GetComponent<SimpleGrabbable>().Drop();
+                _player.GetComponent<RayCast>().Drop();
+                _carafe.transform.position = _originCarafe;
             }
         }
         else
@@ -120,6 +132,13 @@ public class Bussola : MonoBehaviour
                 _canvaMagnetize.SetActive(false);
                 _needleIsMagnetized = true;
                 _magnetIsUsed = true;
+
+                _magnet.GetComponent<SimpleGrabbable>().Drop();
+                _magnet.transform.position = _originMagnet;
+                _needle.GetComponent<SimpleGrabbable>().Drop();
+                _needle.transform.position = _originNeedle;
+                _player.GetComponent<RayCast>().Drop();
+                
             }
         }
         else
@@ -134,6 +153,11 @@ public class Bussola : MonoBehaviour
             {
                 Debug.Log("Needle is sticked");
                 _canvaStick.SetActive(false);
+
+                _needle.GetComponent<SimpleGrabbable>().Drop();
+                _cork.GetComponent<SimpleGrabbable>().Drop();
+                _player.GetComponent<RayCast>().Drop();
+
                 _preStick.SetActive(false);
                 _postStick.SetActive(true);
                 _needleIsSticked = true;
@@ -153,6 +177,10 @@ public class Bussola : MonoBehaviour
                 Debug.Log("Compass is ready");
                 _canvaInsert.SetActive(false);
                 _compassIsReady = true;
+
+                _needle.GetComponent<SimpleGrabbable>().Drop();
+                _cork.GetComponent<SimpleGrabbable>().Drop();
+                _player.GetComponent<RayCast>().Drop();
             }
         }
         else
