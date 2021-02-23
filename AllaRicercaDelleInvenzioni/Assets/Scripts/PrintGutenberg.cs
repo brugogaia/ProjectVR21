@@ -15,6 +15,7 @@ public class PrintGutenberg : MonoBehaviour
     private bool entrato;
     public GameObject text;
     public bool fine_anim_stampa;
+    AppearTextCartaStampa fogliocanva;
 
 
     void Start()
@@ -27,8 +28,11 @@ public class PrintGutenberg : MonoBehaviour
         {
             i.SetActive(false);
         }
+
         scriptcarta = GameObject.Find("carta_take").GetComponent<DisappearOnDrop>();
+        fogliocanva = GameObject.Find("carta_take").GetComponent<AppearTextCartaStampa>();
         scriptcarta.enabled = false;
+        fogliocanva.go = false;
         text.SetActive(false);
     }
 
@@ -45,6 +49,7 @@ public class PrintGutenberg : MonoBehaviour
                 Debug.Log("VERO");
                 if(count == (appear_obj.Length - 1))
                 {
+                    fogliocanva.go = true;
                     scriptcarta.enabled = true;
                 }
             }
