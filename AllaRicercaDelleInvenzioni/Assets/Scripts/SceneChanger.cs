@@ -46,7 +46,7 @@ public class SceneChanger: MonoBehaviour
 
     private void OnTriggerEnter(Collider player)
     {
-        if (player.tag == "Player")
+       if (player.tag == "Player")
             Fade();
     }
     
@@ -55,8 +55,8 @@ public class SceneChanger: MonoBehaviour
     void Update()
     {
         _player = GameObject.FindGameObjectWithTag("Player");
-        if (_onInteraction && Input.GetMouseButtonDown(0) && _player.GetComponent<RayCast>()._raycasted.Equals(gameObject))
-            Fade();
+       if (_onInteraction && Input.GetMouseButtonDown(0) && _player.GetComponent<RayCast>()._raycasted.Equals(gameObject))
+           Fade();
 
     }
 
@@ -76,7 +76,7 @@ public class SceneChanger: MonoBehaviour
                 SceneManager.LoadScene(_target, LoadSceneMode.Single);
             }
 
-            //GameObject Player = GameObject.FindGameObjectWithTag("Player");
+            GameObject Player = GameObject.FindGameObjectWithTag("Player");
         }
         
     }

@@ -13,13 +13,15 @@ public class OpenBookText : MonoBehaviour
     {
         foreach (GameObject t in _text) t.SetActive(false);
         index = PlayerPrefs.GetInt("Progress");
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(index);
         _ray = _player.GetComponent<RayCast>();
-        if (index > _text.Length)
+        if (index < _text.Length)
         {
             if (_ray._raycasted != null)
             {
