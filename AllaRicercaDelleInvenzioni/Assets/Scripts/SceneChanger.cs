@@ -24,13 +24,7 @@ public class SceneChanger: MonoBehaviour
 
         
 
-        if (_isStartMenu)
-        {
-            PlayerPrefs.SetInt("Progress", 0);
-            PlayerPrefs.SetInt("Cura", 0);
-            PlayerPrefs.SetInt("Frasi", 0);
-            PlayerPrefs.SetInt("Biblioteca", 1);
-        }
+        
         if (_onButton)
         {
             if (_startButton != null)
@@ -64,7 +58,7 @@ public class SceneChanger: MonoBehaviour
     {
         if (_continue)
             Continue();
-        if (!Menù.pausa)
+        else if (!Menù.pausa)
         {
             
             {
@@ -95,6 +89,13 @@ public class SceneChanger: MonoBehaviour
     }
 
     private void Fade() {
+        if (_isStartMenu)
+        {
+            PlayerPrefs.SetInt("Progress", 0);
+            PlayerPrefs.SetInt("Cura", 0);
+            PlayerPrefs.SetInt("Frasi", 0);
+            PlayerPrefs.SetInt("Biblioteca", 1);
+        }
         if (_fade != null)
         {
             _fadeAnim = _fade.GetComponent<Animator>();
