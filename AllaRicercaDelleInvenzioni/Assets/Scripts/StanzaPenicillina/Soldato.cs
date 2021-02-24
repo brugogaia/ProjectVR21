@@ -20,6 +20,8 @@ public class Soldato : MonoBehaviour
     public bool intrigger;
     private bool endtalk;
     private bool _play;
+
+    [SerializeField] GameObject _canva;
     
 
     // Start is called before the first frame update
@@ -83,6 +85,7 @@ public class Soldato : MonoBehaviour
         {
             talk_box.SetActive(true);
             textDisplay.enabled = true;
+            _canva.SetActive(false);
 
             if (!talking)
             {

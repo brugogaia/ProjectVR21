@@ -5774,6 +5774,7 @@ MonoBehaviour:
     Spero che tu abbia successo anche nella cura di questo virus che ha cancellato
     la memoria di tutte le invenzioni cos\xEC importanti per l\u2019evoluzione dell\u2019umanit\xE0. "
   intrigger: 0
+  _canva: {fileID: 289263674}
 --- !u!114 &1648144090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7193,6 +7194,7 @@ MonoBehaviour:
     Spero che tu abbia successo anche nella cura di questo virus che ha cancellato
     la memoria di tutte le invenzioni cos\xEC importanti per l\u2019evoluzione dell\u2019umanit\xE0. "
   intrigger: 0
+  _canva: {fileID: 289263674}
 --- !u!82 &1914686612
 AudioSource:
   m_ObjectHideFlags: 0

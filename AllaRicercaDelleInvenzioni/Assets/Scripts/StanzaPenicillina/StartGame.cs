@@ -39,9 +39,6 @@ public class StartGame : MonoBehaviour
             {
                 _text.SetActive(false);
                 UnityStandardAssets.Characters.FirstPerson.RigidbodyFirstPersonController._activeMovement = false;
-                
-
-                // MANCA CODICE PER CAMBIARE SCENA
             }
         } 
         else
