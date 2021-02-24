@@ -70,6 +70,7 @@ public class GiochinoStampa : MonoBehaviour
                 Debug.Log("ERRORE");
                 this.ClearText();
                 errore.SetActive(true);
+                errore.GetComponent<AudioSource>().Play();
                 tempo = 3f;
             }
         }
@@ -80,6 +81,7 @@ public class GiochinoStampa : MonoBehaviour
             canva1.SetActive(false);
             
             canva2.SetActive(true);
+            canva2.GetComponent<AudioSource>().Play();
         }
     }
 
