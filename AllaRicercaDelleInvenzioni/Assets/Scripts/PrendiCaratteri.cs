@@ -9,34 +9,27 @@ public class PrendiCaratteri : MonoBehaviour
     public GiochinoStampa fineGiocoTrue;
     public PrintGutenberg script_pressa;
 
-    //RigidbodyFirstPersonController scriptFP = null;
-
-
-
     // Start is called before the first frame update
     void Start()
     {
         text1.SetActive(false);
-             
-        // GameObject tempObj = GameObject.Find("RigidBodyFPSController");
-        // scriptFP = tempObj.GetComponent<RigidbodyFirstPersonController>();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
        
-        if (entrato && fineGiocoTrue.fineGioco && !script_pressa.libro_move)
+        if (entrato && fineGiocoTrue.fineGioco && !script_pressa.libro_move &&!script_pressa.finecaratteri)
         {
-            //Debug.Log("ENTRATO NEI CARATTERI");
             text1.SetActive(true);
-
-            
-
         }
-        if (!entrato && fineGiocoTrue.fineGioco)
+        else if (!entrato && fineGiocoTrue.fineGioco)
         {
-            //Debug.Log("Fuori DAI CARATTERI");
+            text1.SetActive(false);
+        }
+        else if ((script_pressa.finecaratteri)||(script_pressa.libro_move))
+        {
             text1.SetActive(false);
         }
 

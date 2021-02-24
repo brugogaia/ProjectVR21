@@ -7,11 +7,11 @@ public class PrintGutenberg : MonoBehaviour
     // Start is called before the first frame update
 
     public GameObject[] appear_obj;
-    private bool appearAll;
     private int count;
     private Animator anim;
     DisappearOnDrop scriptcarta;
     public bool libro_move;
+    public bool finecaratteri;
     private bool entrato;
     public GameObject text;
     public bool fine_anim_stampa;
@@ -21,7 +21,6 @@ public class PrintGutenberg : MonoBehaviour
 
     void Start()
     {
-        appearAll = false;
         anim = GetComponent<Animator>();
         
         appear_obj = GameObject.FindGameObjectsWithTag("AppearDrop");
@@ -33,6 +32,7 @@ public class PrintGutenberg : MonoBehaviour
         scriptcarta = GameObject.Find("carta_take").GetComponent<DisappearOnDrop>();
         fogliocanva = GameObject.Find("carta_take").GetComponent<AppearTextCartaStampa>();
         scriptcarta.enabled = false;
+        finecaratteri = false;
         fogliocanva.go = false;
         text.SetActive(false);
         fogliocarta.SetActive(false);
@@ -47,19 +47,14 @@ public class PrintGutenberg : MonoBehaviour
             if (i.activeSelf)
             {
                 count++;
-                //appearAll = true;
-                Debug.Log("VERO");
                 if(count == (appear_obj.Length - 1))
                 {
                     fogliocanva.go = true;
                     scriptcarta.enabled = true;
+                    finecaratteri = true;
                 }
             }
-            else
-            {
-                appearAll = false;
-                Debug.Log("FALSO");
-            }
+            
         }
 
         if (Input.GetKeyDown(KeyCode.O))
@@ -68,7 +63,6 @@ public class PrintGutenberg : MonoBehaviour
             {
                 i.SetActive(true);
             }
-            appearAll = true;
         }
 
         if (fogliocarta.activeSelf)

@@ -4859,8 +4859,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 129.7, y: -437.69998}
-  m_SizeDelta: {x: 1219.9268, y: 125.21481}
+  m_AnchoredPosition: {x: 102, y: -431.3}
+  m_SizeDelta: {x: 1219.9268, y: 127.781555}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &295609403
 MonoBehaviour:
@@ -5058,8 +5058,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 82.388, y: 167.16003, z: 10.000004}
-  m_Center: {x: -36.194, y: 73.927444, z: 0}
+  m_Size: {x: 92.993935, y: 187.98845, z: 10.000004}
+  m_Center: {x: -39.191326, y: 84.34166, z: 0}
 --- !u!4 &308007239 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2505907358504812747, guid: 07e7bc82966cbef4e899b89b539da437,
@@ -13619,7 +13619,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 758, y: -481}
+  m_AnchoredPosition: {x: 745.2999, y: -473.30002}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.49999997, y: 0.50000054}
 --- !u!114 &737454354
@@ -17876,7 +17876,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &955470742
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17908,8 +17908,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 85.82975, y: 163.28378, z: 10.000004}
-  m_Center: {x: -37.9149, y: 72.88376, z: 0}
+  m_Size: {x: 93.66894, y: 186.97234, z: 10.000004}
+  m_Center: {x: -39.06771, y: 81.86773, z: 0}
 --- !u!23 &955470744
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17965,12 +17965,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 955470741}
   m_LocalRotation: {x: -0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 45.6, y: 1.4, z: -34.5}
+  m_LocalPosition: {x: 15.7344055, y: 40.333313, z: -66.813736}
   m_LocalScale: {x: 0.55, y: 0.28, z: 0.28}
   m_Children:
   - {fileID: 307890215}
-  m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_Father: {fileID: 1848251216}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90.00001, y: 90, z: 0}
 --- !u!4 &955911440 stripped
 Transform:
@@ -32510,6 +32510,51 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1842270567}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1848251214
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1848251216}
+  - component: {fileID: 1848251215}
+  m_Layer: 0
+  m_Name: ShortcutFineStanza
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1848251215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848251214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a838ae5e9a515b840a0bdac944d363b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _exitTrigger: {fileID: 955470741}
+--- !u!4 &1848251216
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848251214}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 29.865593, y: -38.93331, z: 32.313736}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 955470746}
+  m_Father: {fileID: 0}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1853776934
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37076,7 +37121,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -437.4}
+  m_AnchoredPosition: {x: -12.7000675, y: -429.7}
   m_SizeDelta: {x: 145.63808, y: 31.60941}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2118251089
