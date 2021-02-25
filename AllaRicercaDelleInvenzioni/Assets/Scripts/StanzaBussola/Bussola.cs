@@ -17,6 +17,8 @@ public class Bussola : MonoBehaviour
     [SerializeField] GameObject _carafe;
     [SerializeField] GameObject _needle;
     [SerializeField] GameObject _magnet;
+    [SerializeField] GameObject _newMagnet;
+    [SerializeField] GameObject _needleMagnetized;
     [SerializeField] GameObject _cork;
     [SerializeField] GameObject _fluid;
     [SerializeField] GameObject _compass;
@@ -39,7 +41,9 @@ public class Bussola : MonoBehaviour
     private bool _magnetIsGrabbed = false;
     private bool _corkIsGrabbed = false;
     private bool _corkPostStickIsGrabbed = false;
+    private bool _needleMagnetizedIsGrabbed = false;
     private bool _needleIsRayCasted = false;
+    private bool _needleMagnetizedIsRayCasted = false;
     private bool _magnetIsRayCasted = false;
     private bool _corkIsRayCasted = false;
     private bool _bowlIsRayCasted = false;
@@ -53,6 +57,8 @@ public class Bussola : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        _newMagnet.SetActive(false);
+        _needleMagnetized.SetActive(false);
         _postStick.SetActive(false);
         _compass.SetActive(false);
         _fluid.SetActive(false);
@@ -73,6 +79,7 @@ public class Bussola : MonoBehaviour
     {
         _carafeIsGrabbed = _carafe.GetComponent<SimpleGrabbable>()._isGrabbed;
         _needleIsGrabbed = _needle.GetComponent<SimpleGrabbable>()._isGrabbed;
+        _needleMagnetizedIsGrabbed = _needleMagnetized.GetComponent<SimpleGrabbable>()._isGrabbed;
         _magnetIsGrabbed = _magnet.GetComponent<SimpleGrabbable>()._isGrabbed;
         _corkIsGrabbed = _cork.GetComponent<SimpleGrabbable>()._isGrabbed;
         _corkPostStickIsGrabbed = _postCork.GetComponent<SimpleGrabbable>()._isGrabbed;
@@ -88,6 +95,9 @@ public class Bussola : MonoBehaviour
                 case "ago":
                     _needleIsRayCasted = true;
                     break;
+                case "ago_magnetizzato":
+                    _needleMagnetizedIsRayCasted = true;
+                    break;
                 case "magnete":
                     _magnetIsRayCasted = true;
                     break;
@@ -99,6 +109,7 @@ public class Bussola : MonoBehaviour
                     _magnetIsRayCasted = false;
                     _corkIsRayCasted = false;
                     _bowlIsRayCasted = false;
+                    _needleMagnetizedIsRayCasted = false;
                     break;
             }
         }
@@ -130,18 +141,22 @@ public class Bussola : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 Debug.Log("Needle is magnetized");
-                _magnet.GetComponent<AudioSource>().Play();
+                _magnet.SetActive(false);
+                _newMagnet.SetActive(true);
+                _needle.SetActive(false);
+                _needleMagnetized.SetActive(true);
+                _newMagnet.GetComponent<AudioSource>().Play();
                 _canvaMagnetize.SetActive(false);
                 _needleIsMagnetized = true;
                 _magnetIsUsed = true;
 
-                _magnet.GetComponent<SimpleGrabbable>().Drop();
+                //_newMagnet.GetComponent<SimpleGrabbable>().Drop();
                 //_magnet.transform.position = _originMagnet;
-                _needle.GetComponent<SimpleGrabbable>().Drop();
+                //_needleMagnetized.GetComponent<SimpleGrabbable>().Drop();
                 //_needle.transform.position = _originNeedle;
                 _player.GetComponent<RayCast>().Drop();
-                _magnet.GetComponent<Animation>().Play();
-                _needle.GetComponent<Animation>().Play();
+                _newMagnet.GetComponent<Animation>().Play();
+                _needleMagnetized.GetComponent<Animation>().Play();
 
             }
         }
@@ -150,7 +165,7 @@ public class Bussola : MonoBehaviour
             _canvaMagnetize.SetActive(false);
         }
 
-        if (((_needleIsGrabbed && _corkIsRayCasted) || (_corkIsGrabbed && _needleIsRayCasted)) && (!_corkIsUsed && _needleIsMagnetized && !_needleIsSticked))
+        if (((_needleMagnetizedIsGrabbed && _corkIsRayCasted) || (_corkIsGrabbed && _needleMagnetizedIsRayCasted)) && (!_corkIsUsed && _needleIsMagnetized && !_needleIsSticked))
         {
             _canvaStick.SetActive(true);
             if (Input.GetMouseButtonDown(0))
@@ -159,7 +174,7 @@ public class Bussola : MonoBehaviour
                 _postCork_audio.GetComponent<AudioSource>().Play();
                 _canvaStick.SetActive(false);
 
-                _needle.GetComponent<SimpleGrabbable>().Drop();
+                _needleMagnetized.GetComponent<SimpleGrabbable>().Drop();
                 _cork.GetComponent<SimpleGrabbable>().Drop();
                 _player.GetComponent<RayCast>().Drop();
 
