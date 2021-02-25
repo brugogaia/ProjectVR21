@@ -119,7 +119,7 @@ public class Soldato : MonoBehaviour
             if(intrigger)
             {
                 textDisplay.text += letter;
-                yield return new WaitForSeconds(0.05f);
+                yield return new WaitForSeconds(0.045f);
             }
         }
     }
