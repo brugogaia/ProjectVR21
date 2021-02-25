@@ -17,6 +17,9 @@ public class EasyFPC : MonoBehaviour
     public static int Stanza = 0;
     public static bool stop = false;
 
+    [SerializeField] GameObject _person;
+    private Animator _animator;
+
 
     void Start()
     {
@@ -26,6 +29,8 @@ public class EasyFPC : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
 
         _position = 0;
+
+        _animator = _person.GetComponent<Animator>();
     }
 
 
@@ -58,16 +63,22 @@ public class EasyFPC : MonoBehaviour
             {
                 _position = (x + y + z);
                 PlayFootStepAudio(true);
+                if (_animator == null) return;
+                _animator.SetBool("isWalking", true);
             }
             else
             {
                 PlayFootStepAudio(false);
+                if (_animator == null) return;
+                _animator.SetBool("isWalking", false);
             }
 
         }
         else
         {
             PlayFootStepAudio(false);
+            if (_animator == null) return;
+            _animator.SetBool("isWalking", false);
         }        
     }
 
