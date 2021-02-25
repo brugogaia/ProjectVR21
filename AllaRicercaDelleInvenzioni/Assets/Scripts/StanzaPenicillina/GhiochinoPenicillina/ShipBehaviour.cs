@@ -8,10 +8,16 @@ public class ShipBehaviour : MonoBehaviour
     public float _speed = 0.0f;
     public GameObject _shoot;
     public AudioSource _audioShot;
+    private Vector3 OriginalPos;
 
     void Start()
     {
-        
+        OriginalPos = transform.position;
+    }
+
+    private void OnBecameInvisible()
+    {
+        transform.position = new Vector3(OriginalPos.x, (transform.position.y-0.01f)*-1, OriginalPos.z);
     }
 
 

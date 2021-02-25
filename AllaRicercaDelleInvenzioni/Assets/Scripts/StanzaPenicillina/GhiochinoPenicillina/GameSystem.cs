@@ -76,7 +76,7 @@ public class GameSystem : MonoBehaviour
 
     void spawnBacteria()
     {
-        Vector3 spawnpoint = new Vector3(Random.Range(0f,26f), Random.Range(-13.0f, 13.0f), _chara.transform.position.z);
+        Vector3 spawnpoint = new Vector3(Random.Range(20f,26f), Random.Range(-13.0f, 13.0f), _chara.transform.position.z);
 
         GameObject Bactertia = Instantiate(_enemy, spawnpoint, Quaternion.LookRotation(Vector3.forward,_chara.transform.position- spawnpoint)*Quaternion.Euler(0f,0f,90f));
         nOfBacteria++;
@@ -85,7 +85,7 @@ public class GameSystem : MonoBehaviour
 
     void spawnBoss()
     {
-        Vector3 spawnpoint = new Vector3(Random.Range(0f, 5f), Random.Range(-6f,6f), _chara.transform.position.z);
+        Vector3 spawnpoint = new Vector3(Random.Range(0f, 13f), 0, _chara.transform.position.z);
         for (int i = 0; i < 5; i++)
             spawnBacteria();
         GameObject Bactertia = Instantiate(_boss, spawnpoint, Quaternion.identity);
